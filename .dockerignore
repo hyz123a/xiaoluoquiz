@@ -1,0 +1,21 @@
+.git
+.gitignore
+.env
+.env.*
+!.env.example
+
+# Rust and frontend build output.
+target/
+dist/
+node_modules/
+frontend/generated.css
+
+# Test and local-only files.
+playwright-report/
+test-results/
+tmp/
+tests/
+docs/
+configuration/local.yaml
+*.pdf
+07844*.json

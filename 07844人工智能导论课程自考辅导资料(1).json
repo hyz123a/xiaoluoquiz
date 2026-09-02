@@ -1,0 +1,5470 @@
+{
+  "items": [
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "人工智能正式诞生的重要会议通常认为是",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "1950年图灵发表论文"
+        },
+        {
+          "key": "B",
+          "text": "1962年工业机器人应用"
+        },
+        {
+          "key": "C",
+          "text": "1978年专家系统普及"
+        },
+        {
+          "key": "D",
+          "text": "1956年达特茅斯会议"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "D"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "图灵测试主要用于判断机器",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "是否能够联网通信"
+        },
+        {
+          "key": "B",
+          "text": "是否拥有固定外形"
+        },
+        {
+          "key": "C",
+          "text": "是否在行为层面表现出智能"
+        },
+        {
+          "key": "D",
+          "text": "是否具有机械结构"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "C"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "弱人工智能的典型特征是",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "具有完整自我意识"
+        },
+        {
+          "key": "B",
+          "text": "面向特定任务完成智能处理"
+        },
+        {
+          "key": "C",
+          "text": "具备跨领域通用智能"
+        },
+        {
+          "key": "D",
+          "text": "在全部认知能力上超过人类"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "B"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "强人工智能强调机器具备",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "类似人类的一般智能能力"
+        },
+        {
+          "key": "B",
+          "text": "专门的图像分类能力"
+        },
+        {
+          "key": "C",
+          "text": "固定规则检索能力"
+        },
+        {
+          "key": "D",
+          "text": "简单数据存储能力"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "A"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "超人工智能指",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "单一任务自动化系统"
+        },
+        {
+          "key": "B",
+          "text": "传统数据库管理系统"
+        },
+        {
+          "key": "C",
+          "text": "普通网络通信设备"
+        },
+        {
+          "key": "D",
+          "text": "在多数认知能力上超过人类的智能形态"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "D"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "人工智能发展中的专家系统阶段主要体现为",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "通过人工表格记录数据"
+        },
+        {
+          "key": "B",
+          "text": "使用纸质档案管理信息"
+        },
+        {
+          "key": "C",
+          "text": "利用规则和知识进行推理"
+        },
+        {
+          "key": "D",
+          "text": "依靠农业机械完成耕作"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "C"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "符号主义学派重视",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "农业生产经验积累"
+        },
+        {
+          "key": "B",
+          "text": "知识表示和逻辑推理"
+        },
+        {
+          "key": "C",
+          "text": "神经元连接权重变化"
+        },
+        {
+          "key": "D",
+          "text": "环境刺激下的行为反应"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "B"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "连接主义学派重视",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "神经网络和学习机制"
+        },
+        {
+          "key": "B",
+          "text": "手工逻辑符号推演"
+        },
+        {
+          "key": "C",
+          "text": "单纯机械控制"
+        },
+        {
+          "key": "D",
+          "text": "传统行政流程"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "A"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "行为主义学派强调",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "静态文件分类"
+        },
+        {
+          "key": "B",
+          "text": "纸质问卷统计"
+        },
+        {
+          "key": "C",
+          "text": "固定版面排印"
+        },
+        {
+          "key": "D",
+          "text": "智能体与环境的交互行为"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "D"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "人工智能的三个能力层次一般包括",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "采购、仓储和销售"
+        },
+        {
+          "key": "B",
+          "text": "报名、缴费和考试"
+        },
+        {
+          "key": "C",
+          "text": "感知、认知和决策等层次"
+        },
+        {
+          "key": "D",
+          "text": "输入、打印和装订"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "C"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "人工智能正式诞生的重要会议通常认为是",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "1978年专家系统普及"
+        },
+        {
+          "key": "B",
+          "text": "1956年达特茅斯会议"
+        },
+        {
+          "key": "C",
+          "text": "1950年图灵发表论文"
+        },
+        {
+          "key": "D",
+          "text": "1962年工业机器人应用"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "B"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "图灵测试主要用于判断机器",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "是否在行为层面表现出智能"
+        },
+        {
+          "key": "B",
+          "text": "是否具有机械结构"
+        },
+        {
+          "key": "C",
+          "text": "是否能够联网通信"
+        },
+        {
+          "key": "D",
+          "text": "是否拥有固定外形"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "A"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "弱人工智能的典型特征是",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "具备跨领域通用智能"
+        },
+        {
+          "key": "B",
+          "text": "在全部认知能力上超过人类"
+        },
+        {
+          "key": "C",
+          "text": "具有完整自我意识"
+        },
+        {
+          "key": "D",
+          "text": "面向特定任务完成智能处理"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "D"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "强人工智能强调机器具备",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "固定规则检索能力"
+        },
+        {
+          "key": "B",
+          "text": "简单数据存储能力"
+        },
+        {
+          "key": "C",
+          "text": "类似人类的一般智能能力"
+        },
+        {
+          "key": "D",
+          "text": "专门的图像分类能力"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "C"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "人工智能发展的核心支柱包括",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "制度、场地和车辆"
+        },
+        {
+          "key": "B",
+          "text": "文本、纸张和印章"
+        },
+        {
+          "key": "C",
+          "text": "数据、算法和算力"
+        },
+        {
+          "key": "D",
+          "text": "硬盘、键盘和显示器"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "C"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "大数据的特点通常表现为",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "不需要清洗即可使用"
+        },
+        {
+          "key": "B",
+          "text": "规模大、类型多、增长快、价值密度低"
+        },
+        {
+          "key": "C",
+          "text": "数量少、结构单一、更新慢"
+        },
+        {
+          "key": "D",
+          "text": "全部为人工手写记录"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "B"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "算法的主要作用是",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "从数据中发现规律并完成智能任务"
+        },
+        {
+          "key": "B",
+          "text": "替代全部硬件设备"
+        },
+        {
+          "key": "C",
+          "text": "取消数据采集流程"
+        },
+        {
+          "key": "D",
+          "text": "决定计算机外观"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "A"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "分类任务的输出结果通常是",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "连续数值"
+        },
+        {
+          "key": "B",
+          "text": "网络带宽"
+        },
+        {
+          "key": "C",
+          "text": "存储容量"
+        },
+        {
+          "key": "D",
+          "text": "离散类别"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "D"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "回归任务主要用于",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "生成设备外壳"
+        },
+        {
+          "key": "B",
+          "text": "删除全部样本"
+        },
+        {
+          "key": "C",
+          "text": "预测连续数值"
+        },
+        {
+          "key": "D",
+          "text": "识别预设类别"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "C"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "聚类任务主要依据",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "硬件价格高低"
+        },
+        {
+          "key": "B",
+          "text": "样本之间的相似性分组"
+        },
+        {
+          "key": "C",
+          "text": "人工预设标签逐一判定"
+        },
+        {
+          "key": "D",
+          "text": "固定考试分数排序"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "B"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "物联网对人工智能的主要支撑是",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "提供实时多源感知数据"
+        },
+        {
+          "key": "B",
+          "text": "替代全部算法设计"
+        },
+        {
+          "key": "C",
+          "text": "消除伦理风险"
+        },
+        {
+          "key": "D",
+          "text": "保证答案完全一致"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "A"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "云计算对人工智能的主要支撑是",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "提供纸质教材"
+        },
+        {
+          "key": "B",
+          "text": "改变传感器外观"
+        },
+        {
+          "key": "C",
+          "text": "取消模型训练过程"
+        },
+        {
+          "key": "D",
+          "text": "提供弹性计算和存储资源"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "D"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "5G支撑人工智能应用的重要特点是",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "只能离线保存文件"
+        },
+        {
+          "key": "B",
+          "text": "只能用于人工填表"
+        },
+        {
+          "key": "C",
+          "text": "低时延和大连接能力"
+        },
+        {
+          "key": "D",
+          "text": "只能处理文字排版"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "C"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "人工智能算力提升的发展路径体现为",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "取消网络连接"
+        },
+        {
+          "key": "B",
+          "text": "硬件性能、并行计算和云端资源协同提升"
+        },
+        {
+          "key": "C",
+          "text": "减少数据来源"
+        },
+        {
+          "key": "D",
+          "text": "压缩课程章节"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "B"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "人工智能发展的核心支柱包括（2）",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "数据、算法和算力"
+        },
+        {
+          "key": "B",
+          "text": "硬盘、键盘和显示器"
+        },
+        {
+          "key": "C",
+          "text": "制度、场地和车辆"
+        },
+        {
+          "key": "D",
+          "text": "文本、纸张和印章"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "A"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "大数据的特点通常表现为（2）",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "数量少、结构单一、更新慢"
+        },
+        {
+          "key": "B",
+          "text": "全部为人工手写记录"
+        },
+        {
+          "key": "C",
+          "text": "不需要清洗即可使用"
+        },
+        {
+          "key": "D",
+          "text": "规模大、类型多、增长快、价值密度低"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "D"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "算法的主要作用是",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "取消数据采集流程"
+        },
+        {
+          "key": "B",
+          "text": "决定计算机外观"
+        },
+        {
+          "key": "C",
+          "text": "从数据中发现规律并完成智能任务"
+        },
+        {
+          "key": "D",
+          "text": "替代全部硬件设备"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "C"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "分类任务的输出结果通常是",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "存储容量"
+        },
+        {
+          "key": "B",
+          "text": "离散类别"
+        },
+        {
+          "key": "C",
+          "text": "连续数值"
+        },
+        {
+          "key": "D",
+          "text": "网络带宽"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "B"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "机器学习的核心思路是",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "用固定表格替代训练"
+        },
+        {
+          "key": "B",
+          "text": "让计算机从数据中学习规律"
+        },
+        {
+          "key": "C",
+          "text": "完全依赖人工逐条编码"
+        },
+        {
+          "key": "D",
+          "text": "把全部数据打印成纸张"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "B"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "监督学习通常需要",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "带标签的训练样本"
+        },
+        {
+          "key": "B",
+          "text": "无任何样本输入"
+        },
+        {
+          "key": "C",
+          "text": "机械外壳图纸"
+        },
+        {
+          "key": "D",
+          "text": "纸质审批意见"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "A"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "无监督学习常用于",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "按照已知标签分类"
+        },
+        {
+          "key": "B",
+          "text": "打印用户证件"
+        },
+        {
+          "key": "C",
+          "text": "人工编写全部答案"
+        },
+        {
+          "key": "D",
+          "text": "发现数据内部结构"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "D"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "强化学习强调智能体",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "只保存静态图片"
+        },
+        {
+          "key": "B",
+          "text": "停止任何行动"
+        },
+        {
+          "key": "C",
+          "text": "通过与环境交互获得反馈"
+        },
+        {
+          "key": "D",
+          "text": "按页码复制文本"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "C"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "知识图谱的基本组成包括",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "采购、运输和报销"
+        },
+        {
+          "key": "B",
+          "text": "实体、关系和属性"
+        },
+        {
+          "key": "C",
+          "text": "封面、目录和页码"
+        },
+        {
+          "key": "D",
+          "text": "键盘、鼠标和屏幕"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "B"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "知识图谱构建过程通常包括",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "知识抽取、融合、存储和应用"
+        },
+        {
+          "key": "B",
+          "text": "装订、盖章、归档"
+        },
+        {
+          "key": "C",
+          "text": "播种、施肥、收割"
+        },
+        {
+          "key": "D",
+          "text": "清点、入库、报销"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "A"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "自然语言处理的目标是",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "让机器识别金属缺陷"
+        },
+        {
+          "key": "B",
+          "text": "让设备测量土壤湿度"
+        },
+        {
+          "key": "C",
+          "text": "让传感器采集温度"
+        },
+        {
+          "key": "D",
+          "text": "让计算机理解和处理人类语言"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "D"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "机器翻译属于",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "农业金融应用"
+        },
+        {
+          "key": "B",
+          "text": "虚拟现实硬件"
+        },
+        {
+          "key": "C",
+          "text": "自然语言处理应用"
+        },
+        {
+          "key": "D",
+          "text": "智能制造应用"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "C"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "聊天机器人主要依赖",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "库存人工盘点"
+        },
+        {
+          "key": "B",
+          "text": "自然语言理解与生成"
+        },
+        {
+          "key": "C",
+          "text": "表面缺陷检测"
+        },
+        {
+          "key": "D",
+          "text": "农业播种机械"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "B"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "文本情感分析主要判断",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "文本表达的情绪或态度倾向"
+        },
+        {
+          "key": "B",
+          "text": "图像中的车道线"
+        },
+        {
+          "key": "C",
+          "text": "机器零件尺寸"
+        },
+        {
+          "key": "D",
+          "text": "农产品运输路线"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "A"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "计算机视觉主要处理",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "普通纸质档案"
+        },
+        {
+          "key": "B",
+          "text": "行政会议纪要"
+        },
+        {
+          "key": "C",
+          "text": "现金报销凭证"
+        },
+        {
+          "key": "D",
+          "text": "图像和视频信息"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "D"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "目标检测的任务是",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "制定课程封面"
+        },
+        {
+          "key": "B",
+          "text": "手工整理文件"
+        },
+        {
+          "key": "C",
+          "text": "识别目标类别并确定位置"
+        },
+        {
+          "key": "D",
+          "text": "预测连续价格"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "C"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "自动驾驶中的行人识别主要属于",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "农业保险结算"
+        },
+        {
+          "key": "B",
+          "text": "计算机视觉应用"
+        },
+        {
+          "key": "C",
+          "text": "云计算计费应用"
+        },
+        {
+          "key": "D",
+          "text": "数据伦理概念"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "B"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "医疗影像辅助诊断常用",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "计算机视觉识别病灶区域"
+        },
+        {
+          "key": "B",
+          "text": "语音合成生成音乐"
+        },
+        {
+          "key": "C",
+          "text": "物联网控制灯光"
+        },
+        {
+          "key": "D",
+          "text": "文本排版制作目录"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "A"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "人机交互关注",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "农产品销售价格"
+        },
+        {
+          "key": "B",
+          "text": "试卷装订顺序"
+        },
+        {
+          "key": "C",
+          "text": "制造企业注册资本"
+        },
+        {
+          "key": "D",
+          "text": "人与智能系统之间的信息交换"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "D"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "语音控制智能家居属于",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "供应链融资"
+        },
+        {
+          "key": "B",
+          "text": "农业溯源码印刷"
+        },
+        {
+          "key": "C",
+          "text": "人机交互应用"
+        },
+        {
+          "key": "D",
+          "text": "药物研发流程"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "C"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "生物特征识别流程通常包括",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "播种、灌溉、施肥和收割"
+        },
+        {
+          "key": "B",
+          "text": "采集、特征提取、匹配和输出"
+        },
+        {
+          "key": "C",
+          "text": "报名、缴费、考试和领证"
+        },
+        {
+          "key": "D",
+          "text": "采购、验收、报销和归档"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "B"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "人脸识别利用的主要信息是",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "面部生物特征"
+        },
+        {
+          "key": "B",
+          "text": "课程学分"
+        },
+        {
+          "key": "C",
+          "text": "设备采购单"
+        },
+        {
+          "key": "D",
+          "text": "产品包装颜色"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "A"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "虚拟现实强调",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "真实环境中叠加数字信息"
+        },
+        {
+          "key": "B",
+          "text": "普通文字检索"
+        },
+        {
+          "key": "C",
+          "text": "纸质表格统计"
+        },
+        {
+          "key": "D",
+          "text": "沉浸式虚拟环境体验"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "D"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "增强现实强调",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "关闭全部感知设备"
+        },
+        {
+          "key": "B",
+          "text": "取消人机交互"
+        },
+        {
+          "key": "C",
+          "text": "在真实环境中叠加虚拟信息"
+        },
+        {
+          "key": "D",
+          "text": "完全进入虚拟世界"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "C"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "机器学习的核心思路是",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "用固定表格替代训练"
+        },
+        {
+          "key": "B",
+          "text": "让计算机从数据中学习规律"
+        },
+        {
+          "key": "C",
+          "text": "完全依赖人工逐条编码"
+        },
+        {
+          "key": "D",
+          "text": "把全部数据打印成纸张"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "B"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "监督学习通常需要",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "带标签的训练样本"
+        },
+        {
+          "key": "B",
+          "text": "无任何样本输入"
+        },
+        {
+          "key": "C",
+          "text": "机械外壳图纸"
+        },
+        {
+          "key": "D",
+          "text": "纸质审批意见"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "A"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "无监督学习常用于",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "按照已知标签分类"
+        },
+        {
+          "key": "B",
+          "text": "打印用户证件"
+        },
+        {
+          "key": "C",
+          "text": "人工编写全部答案"
+        },
+        {
+          "key": "D",
+          "text": "发现数据内部结构"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "D"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "强化学习强调智能体",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "只保存静态图片"
+        },
+        {
+          "key": "B",
+          "text": "停止任何行动"
+        },
+        {
+          "key": "C",
+          "text": "通过与环境交互获得反馈"
+        },
+        {
+          "key": "D",
+          "text": "按页码复制文本"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "C"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "人工智能伦理主要关注",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "智能技术应用中的价值、责任和社会影响"
+        },
+        {
+          "key": "B",
+          "text": "设备外壳颜色"
+        },
+        {
+          "key": "C",
+          "text": "办公桌摆放位置"
+        },
+        {
+          "key": "D",
+          "text": "纸张采购数量"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "A"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "数据伦理重点关注",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "机器外观设计"
+        },
+        {
+          "key": "B",
+          "text": "车间照明布局"
+        },
+        {
+          "key": "C",
+          "text": "教材装订方式"
+        },
+        {
+          "key": "D",
+          "text": "数据采集、使用和保护中的伦理问题"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "D"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "未经充分告知收集用户数据主要涉及",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "机械加工精度问题"
+        },
+        {
+          "key": "B",
+          "text": "农业种植密度问题"
+        },
+        {
+          "key": "C",
+          "text": "数据伦理问题"
+        },
+        {
+          "key": "D",
+          "text": "虚拟现实体验问题"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "C"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "算法伦理重点关注",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "设备运输路线"
+        },
+        {
+          "key": "B",
+          "text": "算法公平、透明、可解释和责任问题"
+        },
+        {
+          "key": "C",
+          "text": "教材页码编排"
+        },
+        {
+          "key": "D",
+          "text": "教室座位安排"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "B"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "大数据杀熟反映的主要问题是",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "算法利用信息差进行差别对待"
+        },
+        {
+          "key": "B",
+          "text": "图像分辨率提高"
+        },
+        {
+          "key": "C",
+          "text": "云端存储容量增大"
+        },
+        {
+          "key": "D",
+          "text": "传感器数量增加"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "A"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "数据主义与人本主义冲突的核心在于",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "纸张大小与页边距之间的关系"
+        },
+        {
+          "key": "B",
+          "text": "设备价格与颜色之间的关系"
+        },
+        {
+          "key": "C",
+          "text": "教室楼层与门牌之间的关系"
+        },
+        {
+          "key": "D",
+          "text": "数据效率与人的主体价值之间的张力"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "D"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "设计伦理强调在系统设计阶段",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "固定所有输出字号"
+        },
+        {
+          "key": "B",
+          "text": "取消用户反馈"
+        },
+        {
+          "key": "C",
+          "text": "纳入人类价值和责任约束"
+        },
+        {
+          "key": "D",
+          "text": "增加封面装饰"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "C"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "智能机器人伦理设计应重视",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "仓库摆放方向"
+        },
+        {
+          "key": "B",
+          "text": "安全、责任、可控和人类价值"
+        },
+        {
+          "key": "C",
+          "text": "外包装华丽程度"
+        },
+        {
+          "key": "D",
+          "text": "机器编号长度"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "B"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "算法偏见会导致的风险是",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "不同群体受到不公平影响"
+        },
+        {
+          "key": "B",
+          "text": "文档页数减少"
+        },
+        {
+          "key": "C",
+          "text": "网络接口变少"
+        },
+        {
+          "key": "D",
+          "text": "设备重量降低"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "A"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "人工智能伦理分析需要兼顾",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "纸张厚度与封面颜色"
+        },
+        {
+          "key": "B",
+          "text": "座位方向与窗帘颜色"
+        },
+        {
+          "key": "C",
+          "text": "仓库编号与打印速度"
+        },
+        {
+          "key": "D",
+          "text": "技术效果与社会后果"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "D"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "人工智能伦理主要关注",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "办公桌摆放位置"
+        },
+        {
+          "key": "B",
+          "text": "纸张采购数量"
+        },
+        {
+          "key": "C",
+          "text": "智能技术应用中的价值、责任和社会影响"
+        },
+        {
+          "key": "D",
+          "text": "设备外壳颜色"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "C"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "数据伦理重点关注",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "教材装订方式"
+        },
+        {
+          "key": "B",
+          "text": "数据采集、使用和保护中的伦理问题"
+        },
+        {
+          "key": "C",
+          "text": "机器外观设计"
+        },
+        {
+          "key": "D",
+          "text": "车间照明布局"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "B"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "未经充分告知收集用户数据主要涉及",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "数据伦理问题"
+        },
+        {
+          "key": "B",
+          "text": "虚拟现实体验问题"
+        },
+        {
+          "key": "C",
+          "text": "机械加工精度问题"
+        },
+        {
+          "key": "D",
+          "text": "农业种植密度问题"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "A"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "算法伦理重点关注",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "教材页码编排"
+        },
+        {
+          "key": "B",
+          "text": "教室座位安排"
+        },
+        {
+          "key": "C",
+          "text": "设备运输路线"
+        },
+        {
+          "key": "D",
+          "text": "算法公平、透明、可解释和责任问题"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "D"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "智能制造是指",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "纯手工加工流程"
+        },
+        {
+          "key": "B",
+          "text": "普通纸质仓库台账"
+        },
+        {
+          "key": "C",
+          "text": "传统人工排班表"
+        },
+        {
+          "key": "D",
+          "text": "人工智能等技术与制造过程融合形成的制造方式"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "D"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "智能制造的意义主要体现为",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "减少数据采集环节"
+        },
+        {
+          "key": "B",
+          "text": "固定全部生产计划"
+        },
+        {
+          "key": "C",
+          "text": "提高效率、质量和生产协同能力"
+        },
+        {
+          "key": "D",
+          "text": "增加纸质记录数量"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "C"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "智能制造链条通常包括",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "采购、报销、归档、装订"
+        },
+        {
+          "key": "B",
+          "text": "智能感知、数据分析、智能决策、自动执行"
+        },
+        {
+          "key": "C",
+          "text": "报名、缴费、考试、发证"
+        },
+        {
+          "key": "D",
+          "text": "封面、目录、正文、附件"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "B"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "表面缺陷检测主要依赖",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "计算机视觉识别产品表面异常"
+        },
+        {
+          "key": "B",
+          "text": "自然语言生成文章"
+        },
+        {
+          "key": "C",
+          "text": "农业机器人播种"
+        },
+        {
+          "key": "D",
+          "text": "云会议文字转写"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "A"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "需求预测在制造中的作用是",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "替代全部设备维护"
+        },
+        {
+          "key": "B",
+          "text": "取消质量检测"
+        },
+        {
+          "key": "C",
+          "text": "决定员工服装颜色"
+        },
+        {
+          "key": "D",
+          "text": "帮助安排生产和优化库存"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "D"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "智能分拣系统主要用于",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "医疗影像阅片"
+        },
+        {
+          "key": "B",
+          "text": "文本情感分析"
+        },
+        {
+          "key": "C",
+          "text": "按识别结果自动分类和传送物品"
+        },
+        {
+          "key": "D",
+          "text": "课堂签到统计"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "C"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "供应链优化需要关注",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "会议座位排序"
+        },
+        {
+          "key": "B",
+          "text": "需求、库存、生产和配送协同"
+        },
+        {
+          "key": "C",
+          "text": "封面色彩搭配"
+        },
+        {
+          "key": "D",
+          "text": "试卷字体大小"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "B"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "工业大数据在智能制造中的价值是",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "支持生产分析、质量控制和决策"
+        },
+        {
+          "key": "B",
+          "text": "替代学生自学"
+        },
+        {
+          "key": "C",
+          "text": "生成娱乐短视频"
+        },
+        {
+          "key": "D",
+          "text": "确定医疗挂号窗口"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "A"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "智能制造是指",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "纯手工加工流程"
+        },
+        {
+          "key": "B",
+          "text": "普通纸质仓库台账"
+        },
+        {
+          "key": "C",
+          "text": "传统人工排班表"
+        },
+        {
+          "key": "D",
+          "text": "人工智能等技术与制造过程融合形成的制造方式"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "D"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "智能制造的意义主要体现为",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "减少数据采集环节"
+        },
+        {
+          "key": "B",
+          "text": "固定全部生产计划"
+        },
+        {
+          "key": "C",
+          "text": "提高效率、质量和生产协同能力"
+        },
+        {
+          "key": "D",
+          "text": "增加纸质记录数量"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "C"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "教育信息化的发展为人工智能教育应用提供了",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "农业机械作业基础"
+        },
+        {
+          "key": "B",
+          "text": "医疗药品包装基础"
+        },
+        {
+          "key": "C",
+          "text": "数字资源和平台基础"
+        },
+        {
+          "key": "D",
+          "text": "纸质证书装订基础"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "C"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "个性化教学强调",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "只依赖纸质签到"
+        },
+        {
+          "key": "B",
+          "text": "根据学习者差异提供适配资源和路径"
+        },
+        {
+          "key": "C",
+          "text": "所有学生使用完全相同进度"
+        },
+        {
+          "key": "D",
+          "text": "取消学习数据分析"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "B"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "人工智能优化教师角色主要表现为",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "辅助教师从重复性事务转向指导和评价"
+        },
+        {
+          "key": "B",
+          "text": "替代教师全部育人职责"
+        },
+        {
+          "key": "C",
+          "text": "取消课堂互动"
+        },
+        {
+          "key": "D",
+          "text": "减少教学反馈"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "A"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "学习方式变化主要体现为",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "只进行固定抄写"
+        },
+        {
+          "key": "B",
+          "text": "不使用任何学习资源"
+        },
+        {
+          "key": "C",
+          "text": "完全取消评价"
+        },
+        {
+          "key": "D",
+          "text": "自主化、个性化和数据支持的学习"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "D"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "智能教学系统可以",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "完成农产品溯源"
+        },
+        {
+          "key": "B",
+          "text": "控制医院药房库存"
+        },
+        {
+          "key": "C",
+          "text": "推荐学习资源并提供学习反馈"
+        },
+        {
+          "key": "D",
+          "text": "制造零件表面检测"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "C"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "智能管理在教育中常用于",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "产品缺陷识别"
+        },
+        {
+          "key": "B",
+          "text": "学情监测、资源调度和教育决策支持"
+        },
+        {
+          "key": "C",
+          "text": "药物分子筛选"
+        },
+        {
+          "key": "D",
+          "text": "农业喷洒作业"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "B"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "智能评价的特点是",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "利用数据进行过程性和精准化评价"
+        },
+        {
+          "key": "B",
+          "text": "只看一次纸笔成绩"
+        },
+        {
+          "key": "C",
+          "text": "完全不记录学习过程"
+        },
+        {
+          "key": "D",
+          "text": "取消反馈环节"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "A"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "人工智能辅助教育决策需要依据",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "设备外壳颜色"
+        },
+        {
+          "key": "B",
+          "text": "教室门牌样式"
+        },
+        {
+          "key": "C",
+          "text": "教材封面图案"
+        },
+        {
+          "key": "D",
+          "text": "学习数据、教学过程数据和管理数据"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "D"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "教育信息化的发展为人工智能教育应用提供了",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "农业机械作业基础"
+        },
+        {
+          "key": "B",
+          "text": "医疗药品包装基础"
+        },
+        {
+          "key": "C",
+          "text": "数字资源和平台基础"
+        },
+        {
+          "key": "D",
+          "text": "纸质证书装订基础"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "C"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "个性化教学强调",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "只依赖纸质签到"
+        },
+        {
+          "key": "B",
+          "text": "根据学习者差异提供适配资源和路径"
+        },
+        {
+          "key": "C",
+          "text": "所有学生使用完全相同进度"
+        },
+        {
+          "key": "D",
+          "text": "取消学习数据分析"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "B"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "AIGC指",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "制造设备维修"
+        },
+        {
+          "key": "B",
+          "text": "人工智能生成内容"
+        },
+        {
+          "key": "C",
+          "text": "农业智能控制"
+        },
+        {
+          "key": "D",
+          "text": "医疗保险结算"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "B"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "AIGC的典型生成类型包括",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "文本、图像、音频和视频"
+        },
+        {
+          "key": "B",
+          "text": "土壤、肥料、水源和道路"
+        },
+        {
+          "key": "C",
+          "text": "教室、桌椅、黑板和粉笔"
+        },
+        {
+          "key": "D",
+          "text": "库存、发票、账本和印章"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "A"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "跨模态生成强调",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "单纯改变页面边距"
+        },
+        {
+          "key": "B",
+          "text": "固定设备编号"
+        },
+        {
+          "key": "C",
+          "text": "人工搬运货物"
+        },
+        {
+          "key": "D",
+          "text": "多种信息形态之间的融合生成"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "D"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "视觉问答系统通常需要结合",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "农业保险与贷款审批"
+        },
+        {
+          "key": "B",
+          "text": "机器外壳与包装标签"
+        },
+        {
+          "key": "C",
+          "text": "图像理解与语言回答"
+        },
+        {
+          "key": "D",
+          "text": "仓库照明与消防通道"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "C"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "AIGC在传媒中的应用可表现为",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "优化医院排队流程"
+        },
+        {
+          "key": "B",
+          "text": "辅助新闻素材整理和内容生成"
+        },
+        {
+          "key": "C",
+          "text": "自动识别农田虫害"
+        },
+        {
+          "key": "D",
+          "text": "检测零件表面裂纹"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "B"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "AIGC在电商中的应用可表现为",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "商品文案、图片和个性化推荐内容生成"
+        },
+        {
+          "key": "B",
+          "text": "医疗影像病灶识别"
+        },
+        {
+          "key": "C",
+          "text": "工业机器人焊接"
+        },
+        {
+          "key": "D",
+          "text": "农产品喷洒作业"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "A"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "人工智能生成内容的法律与伦理问题包括",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "土壤酸碱度"
+        },
+        {
+          "key": "B",
+          "text": "设备电压等级"
+        },
+        {
+          "key": "C",
+          "text": "教室楼层高度"
+        },
+        {
+          "key": "D",
+          "text": "版权、真实性和责任归属"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "D"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "AIGC提升内容生产效率的方式是",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "替代全部法律判断"
+        },
+        {
+          "key": "B",
+          "text": "保证所有内容真实"
+        },
+        {
+          "key": "C",
+          "text": "辅助生成草稿、素材和多媒体内容"
+        },
+        {
+          "key": "D",
+          "text": "取消内容审核"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "C"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "AIGC指",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "制造设备维修"
+        },
+        {
+          "key": "B",
+          "text": "人工智能生成内容"
+        },
+        {
+          "key": "C",
+          "text": "农业智能控制"
+        },
+        {
+          "key": "D",
+          "text": "医疗保险结算"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "B"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "AIGC的典型生成类型包括",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "文本、图像、音频和视频"
+        },
+        {
+          "key": "B",
+          "text": "土壤、肥料、水源和道路"
+        },
+        {
+          "key": "C",
+          "text": "教室、桌椅、黑板和粉笔"
+        },
+        {
+          "key": "D",
+          "text": "库存、发票、账本和印章"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "A"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "医疗资源结构性矛盾表现为",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "优质资源分布不均和服务压力较大"
+        },
+        {
+          "key": "B",
+          "text": "教材页码不连续"
+        },
+        {
+          "key": "C",
+          "text": "农产品包装单一"
+        },
+        {
+          "key": "D",
+          "text": "制造设备颜色不同"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "A"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "医疗数据增长为智能医疗提供",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "试卷装订材料"
+        },
+        {
+          "key": "B",
+          "text": "农业播种工具"
+        },
+        {
+          "key": "C",
+          "text": "产品外包装样式"
+        },
+        {
+          "key": "D",
+          "text": "训练、分析和辅助决策基础"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "D"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "精准医疗强调",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "取消医生判断"
+        },
+        {
+          "key": "B",
+          "text": "只依赖纸质档案"
+        },
+        {
+          "key": "C",
+          "text": "根据个体差异提供更适合的诊疗方案"
+        },
+        {
+          "key": "D",
+          "text": "所有患者使用相同方案"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "C"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "人工智能辅助医疗决策主要用于",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "决定医院建筑颜色"
+        },
+        {
+          "key": "B",
+          "text": "为诊断、治疗和管理提供参考"
+        },
+        {
+          "key": "C",
+          "text": "替代全部医患沟通"
+        },
+        {
+          "key": "D",
+          "text": "取消隐私保护"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "B"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "智能医疗优化诊疗流程可以",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "减少等待、辅助分诊和提升服务体验"
+        },
+        {
+          "key": "B",
+          "text": "提高试卷印刷速度"
+        },
+        {
+          "key": "C",
+          "text": "改变农田形状"
+        },
+        {
+          "key": "D",
+          "text": "固定全部生产工序"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "A"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "医疗影像诊断中人工智能常用于",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "生成电商文案"
+        },
+        {
+          "key": "B",
+          "text": "控制课堂投影"
+        },
+        {
+          "key": "C",
+          "text": "完成农业播种"
+        },
+        {
+          "key": "D",
+          "text": "识别疑似病灶和辅助医生判断"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "D"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "人工智能在药物研发中的价值是",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "增加纸质病历厚度"
+        },
+        {
+          "key": "B",
+          "text": "取消临床安全要求"
+        },
+        {
+          "key": "C",
+          "text": "提高候选药物筛选和研发效率"
+        },
+        {
+          "key": "D",
+          "text": "改变医院门牌"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "C"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "智慧康养主要面向",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "影视内容生成"
+        },
+        {
+          "key": "B",
+          "text": "健康监测、照护支持和养老服务"
+        },
+        {
+          "key": "C",
+          "text": "制造分拣作业"
+        },
+        {
+          "key": "D",
+          "text": "课堂作业批改"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "B"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "保险运营与健康管理成本降低依赖",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "风险识别、健康数据分析和服务管理"
+        },
+        {
+          "key": "B",
+          "text": "图像风格转换"
+        },
+        {
+          "key": "C",
+          "text": "教室桌椅摆放"
+        },
+        {
+          "key": "D",
+          "text": "机器外壳喷涂"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "A"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "医疗资源结构性矛盾表现为",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "教材页码不连续"
+        },
+        {
+          "key": "B",
+          "text": "农产品包装单一"
+        },
+        {
+          "key": "C",
+          "text": "制造设备颜色不同"
+        },
+        {
+          "key": "D",
+          "text": "优质资源分布不均和服务压力较大"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "D"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "医疗数据增长为智能医疗提供",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "农业播种工具"
+        },
+        {
+          "key": "B",
+          "text": "产品外包装样式"
+        },
+        {
+          "key": "C",
+          "text": "训练、分析和辅助决策基础"
+        },
+        {
+          "key": "D",
+          "text": "试卷装订材料"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "C"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "精准医疗强调",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "只依赖纸质档案"
+        },
+        {
+          "key": "B",
+          "text": "根据个体差异提供更适合的诊疗方案"
+        },
+        {
+          "key": "C",
+          "text": "所有患者使用相同方案"
+        },
+        {
+          "key": "D",
+          "text": "取消医生判断"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "B"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "农业劳动力结构性变化体现为",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "教材字体变化"
+        },
+        {
+          "key": "B",
+          "text": "医院科室名称变化"
+        },
+        {
+          "key": "C",
+          "text": "工厂外墙颜色变化"
+        },
+        {
+          "key": "D",
+          "text": "劳动力老龄化和从业人口变化"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "D"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "传统农业风险管理局限表现为",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "课堂座位拥挤"
+        },
+        {
+          "key": "B",
+          "text": "影像分辨率过高"
+        },
+        {
+          "key": "C",
+          "text": "对灾害、病虫害和市场波动应对不足"
+        },
+        {
+          "key": "D",
+          "text": "纸张采购困难"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "C"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "智能种植主要利用",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "医疗挂号收费"
+        },
+        {
+          "key": "B",
+          "text": "传感数据和智能分析指导种植管理"
+        },
+        {
+          "key": "C",
+          "text": "纸质报表装订"
+        },
+        {
+          "key": "D",
+          "text": "影视剪辑合成"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "B"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "智慧养殖可用于",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "环境监测、饲喂管理和疫病预警"
+        },
+        {
+          "key": "B",
+          "text": "商品文案生成"
+        },
+        {
+          "key": "C",
+          "text": "课堂资源推荐"
+        },
+        {
+          "key": "D",
+          "text": "工业表面检测"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "A"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "农业机器人主要用于",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "考试阅卷"
+        },
+        {
+          "key": "B",
+          "text": "文本翻译"
+        },
+        {
+          "key": "C",
+          "text": "医院排队叫号"
+        },
+        {
+          "key": "D",
+          "text": "播种、巡检、采摘和喷洒等作业"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "D"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "农产品溯源的作用是",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "减少课程章节"
+        },
+        {
+          "key": "B",
+          "text": "改变机器外观"
+        },
+        {
+          "key": "C",
+          "text": "记录生产流通过程并增强质量追踪"
+        },
+        {
+          "key": "D",
+          "text": "增加封面页数"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "C"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "农业金融保险应用人工智能可用于",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "产品表面抛光"
+        },
+        {
+          "key": "B",
+          "text": "风险评估、理赔辅助和信用分析"
+        },
+        {
+          "key": "C",
+          "text": "课堂语音点名"
+        },
+        {
+          "key": "D",
+          "text": "影视配乐生成"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "B"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "人工智能促进农业可持续发展需要",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "提高资源利用效率并支持精准管理"
+        },
+        {
+          "key": "B",
+          "text": "扩大纸质台账数量"
+        },
+        {
+          "key": "C",
+          "text": "取消风险预警"
+        },
+        {
+          "key": "D",
+          "text": "减少生产数据采集"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "A"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "农业智能化转型对农村劳动力的影响是",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "让所有岗位不再需要培训"
+        },
+        {
+          "key": "B",
+          "text": "使农业生产脱离管理"
+        },
+        {
+          "key": "C",
+          "text": "取消农产品流通"
+        },
+        {
+          "key": "D",
+          "text": "推动劳动内容从体力作业向技术管理转变"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "D"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "农业劳动力结构性变化体现为",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "医院科室名称变化"
+        },
+        {
+          "key": "B",
+          "text": "工厂外墙颜色变化"
+        },
+        {
+          "key": "C",
+          "text": "劳动力老龄化和从业人口变化"
+        },
+        {
+          "key": "D",
+          "text": "教材字体变化"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "C"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "传统农业风险管理局限表现为",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "影像分辨率过高"
+        },
+        {
+          "key": "B",
+          "text": "对灾害、病虫害和市场波动应对不足"
+        },
+        {
+          "key": "C",
+          "text": "纸张采购困难"
+        },
+        {
+          "key": "D",
+          "text": "课堂座位拥挤"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "B"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "single_choice",
+      "stem": "智能种植主要利用",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "传感数据和智能分析指导种植管理"
+        },
+        {
+          "key": "B",
+          "text": "纸质报表装订"
+        },
+        {
+          "key": "C",
+          "text": "影视剪辑合成"
+        },
+        {
+          "key": "D",
+          "text": "医疗挂号收费"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "single_choice",
+        "option_key": "A"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "multiple_choice",
+      "stem": "人工智能的能力层次包括",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "认知"
+        },
+        {
+          "key": "B",
+          "text": "决策"
+        },
+        {
+          "key": "C",
+          "text": "装订"
+        },
+        {
+          "key": "D",
+          "text": "盖章"
+        },
+        {
+          "key": "E",
+          "text": "感知"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "multiple_choice",
+        "option_keys": [
+          "A",
+          "B",
+          "E"
+        ]
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "multiple_choice",
+      "stem": "人工智能主要学派包括",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "行为主义"
+        },
+        {
+          "key": "B",
+          "text": "经验主义"
+        },
+        {
+          "key": "C",
+          "text": "目录主义"
+        },
+        {
+          "key": "D",
+          "text": "符号主义"
+        },
+        {
+          "key": "E",
+          "text": "连接主义"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "multiple_choice",
+        "option_keys": [
+          "A",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "multiple_choice",
+      "stem": "弱人工智能与强人工智能的区别可从以下方面理解",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "纸张大小"
+        },
+        {
+          "key": "B",
+          "text": "封面颜色"
+        },
+        {
+          "key": "C",
+          "text": "任务范围"
+        },
+        {
+          "key": "D",
+          "text": "通用能力"
+        },
+        {
+          "key": "E",
+          "text": "自主适应能力"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "multiple_choice",
+        "option_keys": [
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "multiple_choice",
+      "stem": "人工智能的核心支柱包括",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "算力"
+        },
+        {
+          "key": "B",
+          "text": "情绪"
+        },
+        {
+          "key": "C",
+          "text": "地形"
+        },
+        {
+          "key": "D",
+          "text": "数据"
+        },
+        {
+          "key": "E",
+          "text": "算法"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "multiple_choice",
+        "option_keys": [
+          "A",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "multiple_choice",
+      "stem": "大数据特点包括",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "价值密度低"
+        },
+        {
+          "key": "B",
+          "text": "完全无噪声"
+        },
+        {
+          "key": "C",
+          "text": "规模大"
+        },
+        {
+          "key": "D",
+          "text": "类型多"
+        },
+        {
+          "key": "E",
+          "text": "增长快"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "multiple_choice",
+        "option_keys": [
+          "A",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "multiple_choice",
+      "stem": "常见算法任务包括",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "盖章"
+        },
+        {
+          "key": "B",
+          "text": "分类"
+        },
+        {
+          "key": "C",
+          "text": "回归"
+        },
+        {
+          "key": "D",
+          "text": "聚类"
+        },
+        {
+          "key": "E",
+          "text": "装订"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "multiple_choice",
+        "option_keys": [
+          "B",
+          "C",
+          "D"
+        ]
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "multiple_choice",
+      "stem": "支撑人工智能应用的信息基础设施有",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "物联网"
+        },
+        {
+          "key": "B",
+          "text": "云计算"
+        },
+        {
+          "key": "C",
+          "text": "5G"
+        },
+        {
+          "key": "D",
+          "text": "纸质档案"
+        },
+        {
+          "key": "E",
+          "text": "普通粉笔"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "multiple_choice",
+        "option_keys": [
+          "A",
+          "B",
+          "C"
+        ]
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "multiple_choice",
+      "stem": "机器学习按学习模式可分为",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "装订学习"
+        },
+        {
+          "key": "B",
+          "text": "盖章学习"
+        },
+        {
+          "key": "C",
+          "text": "监督学习"
+        },
+        {
+          "key": "D",
+          "text": "无监督学习"
+        },
+        {
+          "key": "E",
+          "text": "强化学习"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "multiple_choice",
+        "option_keys": [
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "multiple_choice",
+      "stem": "知识图谱的构建过程包括",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "纸张裁切"
+        },
+        {
+          "key": "B",
+          "text": "知识抽取"
+        },
+        {
+          "key": "C",
+          "text": "知识融合"
+        },
+        {
+          "key": "D",
+          "text": "知识存储"
+        },
+        {
+          "key": "E",
+          "text": "知识应用"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "multiple_choice",
+        "option_keys": [
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "multiple_choice",
+      "stem": "自然语言处理应用包括",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "机器翻译"
+        },
+        {
+          "key": "B",
+          "text": "聊天机器人"
+        },
+        {
+          "key": "C",
+          "text": "垃圾邮件分类"
+        },
+        {
+          "key": "D",
+          "text": "文本情感分析"
+        },
+        {
+          "key": "E",
+          "text": "表面缺陷检测"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "multiple_choice",
+        "option_keys": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "multiple_choice",
+      "stem": "计算机视觉主要任务包括",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "目标检测"
+        },
+        {
+          "key": "B",
+          "text": "图像分割"
+        },
+        {
+          "key": "C",
+          "text": "文本装订"
+        },
+        {
+          "key": "D",
+          "text": "人工盖章"
+        },
+        {
+          "key": "E",
+          "text": "图像识别"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "multiple_choice",
+        "option_keys": [
+          "A",
+          "B",
+          "E"
+        ]
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "multiple_choice",
+      "stem": "生物特征识别可以使用",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "虹膜"
+        },
+        {
+          "key": "B",
+          "text": "声纹"
+        },
+        {
+          "key": "C",
+          "text": "课程代码"
+        },
+        {
+          "key": "D",
+          "text": "人脸"
+        },
+        {
+          "key": "E",
+          "text": "指纹"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "multiple_choice",
+        "option_keys": [
+          "A",
+          "B",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "multiple_choice",
+      "stem": "虚拟现实与增强现实的区别涉及",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "纸张厚度"
+        },
+        {
+          "key": "B",
+          "text": "目录页数"
+        },
+        {
+          "key": "C",
+          "text": "虚拟环境程度"
+        },
+        {
+          "key": "D",
+          "text": "真实环境融合方式"
+        },
+        {
+          "key": "E",
+          "text": "交互体验方式"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "multiple_choice",
+        "option_keys": [
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "multiple_choice",
+      "stem": "人工智能伦理关注的问题包括",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "封面颜色"
+        },
+        {
+          "key": "B",
+          "text": "隐私保护"
+        },
+        {
+          "key": "C",
+          "text": "公平责任"
+        },
+        {
+          "key": "D",
+          "text": "安全可控"
+        },
+        {
+          "key": "E",
+          "text": "人的主体地位"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "multiple_choice",
+        "option_keys": [
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "multiple_choice",
+      "stem": "数据伦理问题包括",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "知情同意"
+        },
+        {
+          "key": "B",
+          "text": "数据滥用"
+        },
+        {
+          "key": "C",
+          "text": "隐私泄露"
+        },
+        {
+          "key": "D",
+          "text": "数据偏见"
+        },
+        {
+          "key": "E",
+          "text": "页面边距"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "multiple_choice",
+        "option_keys": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "multiple_choice",
+      "stem": "算法伦理问题包括",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "透明性不足"
+        },
+        {
+          "key": "B",
+          "text": "责任归属不清"
+        },
+        {
+          "key": "C",
+          "text": "教材开本"
+        },
+        {
+          "key": "D",
+          "text": "目录字体"
+        },
+        {
+          "key": "E",
+          "text": "算法偏见"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "multiple_choice",
+        "option_keys": [
+          "A",
+          "B",
+          "E"
+        ]
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "multiple_choice",
+      "stem": "设计伦理要求智能系统重视",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "责任边界"
+        },
+        {
+          "key": "B",
+          "text": "人类价值"
+        },
+        {
+          "key": "C",
+          "text": "外包装厚度"
+        },
+        {
+          "key": "D",
+          "text": "安全性"
+        },
+        {
+          "key": "E",
+          "text": "可控性"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "multiple_choice",
+        "option_keys": [
+          "A",
+          "B",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "multiple_choice",
+      "stem": "智能制造的技术基础包括",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "物联网"
+        },
+        {
+          "key": "B",
+          "text": "工业大数据"
+        },
+        {
+          "key": "C",
+          "text": "射频识别"
+        },
+        {
+          "key": "D",
+          "text": "机器人"
+        },
+        {
+          "key": "E",
+          "text": "纸质台账"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "multiple_choice",
+        "option_keys": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "multiple_choice",
+      "stem": "智能制造应用场景包括",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "智能决策"
+        },
+        {
+          "key": "B",
+          "text": "表面缺陷检测"
+        },
+        {
+          "key": "C",
+          "text": "需求预测"
+        },
+        {
+          "key": "D",
+          "text": "课堂点名"
+        },
+        {
+          "key": "E",
+          "text": "智能分拣"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "multiple_choice",
+        "option_keys": [
+          "A",
+          "B",
+          "C",
+          "E"
+        ]
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "multiple_choice",
+      "stem": "智能制造可提升",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "生产效率"
+        },
+        {
+          "key": "B",
+          "text": "试卷封面设计"
+        },
+        {
+          "key": "C",
+          "text": "教材页码"
+        },
+        {
+          "key": "D",
+          "text": "质量管控"
+        },
+        {
+          "key": "E",
+          "text": "供应链优化"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "multiple_choice",
+        "option_keys": [
+          "A",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "multiple_choice",
+      "stem": "人工智能赋能教育的意义包括",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "优化教师角色"
+        },
+        {
+          "key": "B",
+          "text": "改变学习方式"
+        },
+        {
+          "key": "C",
+          "text": "取消学习反馈"
+        },
+        {
+          "key": "D",
+          "text": "替代教育目标"
+        },
+        {
+          "key": "E",
+          "text": "实现个性化教学"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "multiple_choice",
+        "option_keys": [
+          "A",
+          "B",
+          "E"
+        ]
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "multiple_choice",
+      "stem": "人工智能在教育中的典型应用环节包括",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "评价"
+        },
+        {
+          "key": "B",
+          "text": "农产品采摘"
+        },
+        {
+          "key": "C",
+          "text": "零件抛光"
+        },
+        {
+          "key": "D",
+          "text": "教学"
+        },
+        {
+          "key": "E",
+          "text": "管理"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "multiple_choice",
+        "option_keys": [
+          "A",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "multiple_choice",
+      "stem": "智能评价可利用的数据包括",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "设备外壳颜色"
+        },
+        {
+          "key": "B",
+          "text": "教室门牌"
+        },
+        {
+          "key": "C",
+          "text": "作业数据"
+        },
+        {
+          "key": "D",
+          "text": "学习过程数据"
+        },
+        {
+          "key": "E",
+          "text": "测试结果数据"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "multiple_choice",
+        "option_keys": [
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "multiple_choice",
+      "stem": "AIGC的内容生成类型包括",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "音频生成"
+        },
+        {
+          "key": "B",
+          "text": "视频生成"
+        },
+        {
+          "key": "C",
+          "text": "土壤检测"
+        },
+        {
+          "key": "D",
+          "text": "文本生成"
+        },
+        {
+          "key": "E",
+          "text": "图像生成"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "multiple_choice",
+        "option_keys": [
+          "A",
+          "B",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "multiple_choice",
+      "stem": "AIGC应用面临的问题包括",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "农田灌溉问题"
+        },
+        {
+          "key": "B",
+          "text": "机器润滑问题"
+        },
+        {
+          "key": "C",
+          "text": "版权问题"
+        },
+        {
+          "key": "D",
+          "text": "真实性问题"
+        },
+        {
+          "key": "E",
+          "text": "伦理责任问题"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "multiple_choice",
+        "option_keys": [
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "multiple_choice",
+      "stem": "人工智能赋能医疗的背景包括",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "教材页码变化"
+        },
+        {
+          "key": "B",
+          "text": "课堂座位固定"
+        },
+        {
+          "key": "C",
+          "text": "医疗资源结构性矛盾"
+        },
+        {
+          "key": "D",
+          "text": "医疗数据增长"
+        },
+        {
+          "key": "E",
+          "text": "精准医疗需求增长"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "multiple_choice",
+        "option_keys": [
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "multiple_choice",
+      "stem": "人工智能医疗应用场景包括",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "工业分拣"
+        },
+        {
+          "key": "B",
+          "text": "影像诊断"
+        },
+        {
+          "key": "C",
+          "text": "药物研发"
+        },
+        {
+          "key": "D",
+          "text": "智慧康养"
+        },
+        {
+          "key": "E",
+          "text": "辅助决策"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "multiple_choice",
+        "option_keys": [
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "multiple_choice",
+      "stem": "智能医疗的价值包括",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "辅助医疗决策"
+        },
+        {
+          "key": "B",
+          "text": "优化诊疗流程"
+        },
+        {
+          "key": "C",
+          "text": "提升患者体验"
+        },
+        {
+          "key": "D",
+          "text": "替代全部医生责任"
+        },
+        {
+          "key": "E",
+          "text": "取消隐私保护"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "multiple_choice",
+        "option_keys": [
+          "A",
+          "B",
+          "C"
+        ]
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "multiple_choice",
+      "stem": "人工智能农业应用场景包括",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "影视剪辑"
+        },
+        {
+          "key": "B",
+          "text": "智能种植"
+        },
+        {
+          "key": "C",
+          "text": "智慧养殖"
+        },
+        {
+          "key": "D",
+          "text": "农业机器人"
+        },
+        {
+          "key": "E",
+          "text": "农产品溯源"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "multiple_choice",
+        "option_keys": [
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "multiple_choice",
+      "stem": "人工智能赋能农业的意义包括",
+      "blank_count": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "提高决策效率"
+        },
+        {
+          "key": "B",
+          "text": "提升管理能力"
+        },
+        {
+          "key": "C",
+          "text": "推动服务体系智能转型"
+        },
+        {
+          "key": "D",
+          "text": "取消风险管理"
+        },
+        {
+          "key": "E",
+          "text": "减少数据采集"
+        }
+      ],
+      "explanation": null,
+      "correct_answer": {
+        "type": "multiple_choice",
+        "option_keys": [
+          "A",
+          "B",
+          "C"
+        ]
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "人工智能",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "人工智能是研究、开发用于模拟、延伸和扩展人的智能的理论、方法、技术及应用系统。它强调让机器在感知、学习、推理、决策等方面表现出一定智能能力。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "图灵测试",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "图灵测试是一种判断机器是否表现出智能的思想实验。测试者通过对话区分人与机器，如果机器的回答难以被区分，就说明机器在行为层面表现出智能。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "弱人工智能",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "弱人工智能是面向特定任务或特定领域的人工智能。它能在限定场景中完成识别、推荐、问答等工作，但不具备通用理解和自主意识。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "强人工智能",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "强人工智能是指具有类似人类一般智能水平的人工智能。它能够跨领域理解、学习和解决问题，并具有较强的自主适应能力。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "超人工智能",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "超人工智能是指在多数认知能力上超过人类水平的人工智能形态。它属于人工智能发展层次中的高阶设想，需要同时关注技术风险和伦理约束。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "大数据",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "大数据是规模大、类型多、增长快、价值密度相对较低的数据集合。它为人工智能训练、分析和预测提供重要基础。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "算法",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "算法是解决问题的一系列明确步骤和规则。人工智能算法通过从数据中发现规律，完成分类、预测、聚类、推荐等任务。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "算力",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "算力是计算设备处理数据和运行算法的能力。人工智能的发展需要稳定的算力支持，以完成模型训练、推理和实时响应。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "分类",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "分类是把样本划分到预先设定类别中的算法任务。垃圾邮件识别、图像类别识别等都属于分类任务。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "回归",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "回归是预测连续数值结果的算法任务。房价预测、销量预测、需求预测等场景常用回归思路。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "聚类",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "聚类是在没有预设类别标签的情况下，根据数据相似性把样本分成若干组。它常用于用户分群、市场分析和异常发现。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "物联网",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "物联网是通过传感器、网络和智能终端把物理对象连接起来的技术体系。它为人工智能提供持续、实时、多源的数据输入。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "云计算",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "云计算是通过网络提供计算、存储、平台和软件等资源的服务模式。它能降低人工智能应用部署成本，并提供弹性算力。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "机器学习",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "机器学习是使计算机利用数据自动改进性能的方法。它通过训练过程从样本中学习规律，并用于预测、识别或决策。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "知识图谱",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "知识图谱是以实体、关系和属性为核心组织知识的结构化网络。它有助于机器理解事物之间的联系，常用于搜索、问答、风控和辅助诊断。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "自然语言处理",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "自然语言处理是研究计算机理解、生成和处理人类语言的技术。机器翻译、聊天机器人、文本情感分析等是其常见应用。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "计算机视觉",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "计算机视觉是使计算机从图像或视频中识别、理解和分析信息的技术。它常用于目标检测、图像识别、医学影像和智能监控。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "人机交互",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "人机交互研究人与计算机或智能系统之间的信息交换方式。语音、触控、手势、可穿戴设备等都属于常见交互方式。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "生物特征识别",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "生物特征识别是利用人脸、指纹、虹膜、声纹等个体特征进行身份识别的技术。它通常包括采集、特征提取、匹配和结果输出等环节。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "虚拟现实",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "虚拟现实是利用计算机生成沉浸式虚拟环境的技术。用户通过设备进入模拟场景，获得视觉、听觉等多感官体验。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "增强现实",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "增强现实是把虚拟信息叠加到真实环境中的技术。它强调现实场景与数字内容的融合，可用于会议、维修指导和教育展示。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "人工智能伦理",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "人工智能伦理研究人工智能开发和应用中应遵守的价值规范、责任边界和社会影响。它关注隐私、公平、安全、责任和人的主体地位等问题。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "数据伦理",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "数据伦理关注数据采集、使用、共享和保护中的伦理问题。其重点包括隐私保护、知情同意、数据偏见和数据滥用风险。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "算法伦理",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "算法伦理关注算法设计、运行和应用中的公平、透明、可解释与责任问题。算法推荐、大数据杀熟等现象都涉及算法伦理。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "设计伦理",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "设计伦理强调在人工智能系统设计阶段就纳入人类价值和伦理约束。它要求系统在功能、安全、责任和人文关怀之间保持协调。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "智能制造",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "智能制造是人工智能等技术与制造过程深度融合形成的制造方式。它强调智能感知、数据分析、智能决策和自动执行，提高生产效率与质量管控能力。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "AIGC",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "AIGC是人工智能生成内容的简称，指利用人工智能生成文本、图像、音频、视频等内容。它能够提升内容生产效率，但也带来版权、真实性和伦理问题。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "智能医疗",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "智能医疗是人工智能技术在医疗管理、诊断支持、药物研发、健康管理等环节中的应用。它有助于提高医疗效率、辅助决策并改善患者体验。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "智慧农业",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "智慧农业是人工智能、物联网、大数据等技术在农业生产经营中的综合应用。它通过智能种植、智慧养殖、机器人和溯源等方式提升农业效率和管理能力。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "农业机器人",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "农业机器人是面向农业生产环节执行自动化或智能化作业的机器人。它可用于播种、巡检、采摘、喷洒和养殖管理等场景。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "简述初识人工智能中的主要考核内容。",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "- （1）掌握初识人工智能的基本概念和典型内容。\n- （2）理解人工智能的定义与能力层次。\n- （3）理解图灵测试。\n- （4）理解人工智能发展阶段与重大事件。\n- （5）理解弱人工智能、强人工智能和超人工智能的区别。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "简述初识人工智能学习中应重点理解的问题。",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "- （1）掌握初识人工智能的基本概念和典型内容。\n- （2）理解人工智能的定义与能力层次。\n- （3）理解图灵测试。\n- （4）理解人工智能发展阶段与重大事件。\n- （5）理解弱人工智能、强人工智能和超人工智能的区别。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "简述人工智能的基础支撑中的主要考核内容。",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "- （1）掌握人工智能的基础支撑的基本概念和典型内容。\n- （2）理解数据、算法、算力对人工智能发展的支撑作用。\n- （3）理解大数据特点。\n- （4）理解分类、回归、聚类。\n- （5）理解物联网、云计算、5G的支撑价值。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "简述人工智能的基础支撑学习中应重点理解的问题。",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "- （1）掌握人工智能的基础支撑的基本概念和典型内容。\n- （2）理解数据、算法、算力对人工智能发展的支撑作用。\n- （3）理解大数据特点。\n- （4）理解分类、回归、聚类。\n- （5）理解物联网、云计算、5G的支撑价值。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "简述人工智能的关键技术中的主要考核内容。",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "- （1）掌握人工智能的关键技术的基本概念和典型内容。\n- （2）理解机器学习。\n- （3）理解知识图谱。\n- （4）理解自然语言处理。\n- （5）理解计算机视觉。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "简述人工智能的关键技术学习中应重点理解的问题。",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "- （1）掌握人工智能的关键技术的基本概念和典型内容。\n- （2）理解机器学习。\n- （3）理解知识图谱。\n- （4）理解自然语言处理。\n- （5）理解计算机视觉。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "简述人工智能伦理中的主要考核内容。",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "- （1）掌握人工智能伦理的基本概念和典型内容。\n- （2）理解人工智能伦理。\n- （3）理解数据伦理。\n- （4）理解算法伦理。\n- （5）理解数据主义与人本主义冲突。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "简述人工智能伦理学习中应重点理解的问题。",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "- （1）掌握人工智能伦理的基本概念和典型内容。\n- （2）理解人工智能伦理。\n- （3）理解数据伦理。\n- （4）理解算法伦理。\n- （5）理解数据主义与人本主义冲突。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "简述人工智能+制造中的主要考核内容。",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "- （1）掌握人工智能+制造的基本概念和典型内容。\n- （2）理解智能制造技术基础。\n- （3）理解智能分拣。\n- （4）理解智能决策。\n- （5）理解表面缺陷检测。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "简述人工智能+制造学习中应重点理解的问题。",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "- （1）掌握人工智能+制造的基本概念和典型内容。\n- （2）理解智能制造技术基础。\n- （3）理解智能分拣。\n- （4）理解智能决策。\n- （5）理解表面缺陷检测。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "简述人工智能+教育中的主要考核内容。",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "- （1）掌握人工智能+教育的基本概念和典型内容。\n- （2）理解个性化教学。\n- （3）理解教师角色变化。\n- （4）理解学习方式变化。\n- （5）理解教学、管理、评价中的典型应用。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "简述人工智能+教育学习中应重点理解的问题。",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "- （1）掌握人工智能+教育的基本概念和典型内容。\n- （2）理解个性化教学。\n- （3）理解教师角色变化。\n- （4）理解学习方式变化。\n- （5）理解教学、管理、评价中的典型应用。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "简述人工智能+内容生产中的主要考核内容。",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "- （1）掌握人工智能+内容生产的基本概念和典型内容。\n- （2）理解AIGC的三个层次。\n- （3）理解典型内容生成类型。\n- （4）理解跨模态生成。\n- （5）理解内容生产应用与法律伦理问题。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "简述人工智能+内容生产学习中应重点理解的问题。",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "- （1）掌握人工智能+内容生产的基本概念和典型内容。\n- （2）理解AIGC的三个层次。\n- （3）理解典型内容生成类型。\n- （4）理解跨模态生成。\n- （5）理解内容生产应用与法律伦理问题。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "简述人工智能+医疗中的主要考核内容。",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "- （1）掌握人工智能+医疗的基本概念和典型内容。\n- （2）理解辅助医疗决策。\n- （3）理解医院管理。\n- （4）理解诊疗流程优化。\n- （5）理解影像诊断。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "简述人工智能+医疗学习中应重点理解的问题。",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "- （1）掌握人工智能+医疗的基本概念和典型内容。\n- （2）理解辅助医疗决策。\n- （3）理解医院管理。\n- （4）理解诊疗流程优化。\n- （5）理解影像诊断。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "简述人工智能+农业中的主要考核内容。",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "- （1）掌握人工智能+农业的基本概念和典型内容。\n- （2）理解智能种植。\n- （3）理解智慧养殖。\n- （4）理解农业机器人。\n- （5）理解农产品溯源。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "简述人工智能+农业学习中应重点理解的问题。",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "- （1）掌握人工智能+农业的基本概念和典型内容。\n- （2）理解智能种植。\n- （3）理解智慧养殖。\n- （4）理解农业机器人。\n- （5）理解农产品溯源。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "某智能客服在对话中能够回答常见问题，但不能处理跨领域复杂任务。请结合弱人工智能、强人工智能和图灵测试进行分析。",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "首先，应从情境中的实际问题入手，明确人工智能要解决的是识别、预测、推荐、决策或辅助管理等任务。本题属于“初识人工智能”范围，分析时应围绕考纲中的人工智能的定义与能力层次、图灵测试、人工智能发展阶段与重大事件、弱人工智能、强人工智能和超人工智能的区别展开。其次，要说明数据来源、算法处理和应用结果之间的关系：数据为系统提供事实基础，算法从数据中发现规律，算力和相关基础设施保证系统能够运行。再次，要结合场景说明应用价值，如提高效率、改善服务、辅助决策、降低重复劳动或提升管理能力。最后，还要注意边界条件和风险控制。涉及个人信息、推荐决策、医疗健康、教育评价等场景时，应重视隐私保护、公平性、透明性、责任归属和人工复核，避免把技术结果直接等同于最终判断。因此，回答应用分析题时既要写出技术作用，也要写出管理要求和伦理注意事项。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "某展会设置人机对话测试，观众通过文字交流判断对方是否为机器。请分析该测试体现的人工智能判断思路及局限。",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "首先，应从情境中的实际问题入手，明确人工智能要解决的是识别、预测、推荐、决策或辅助管理等任务。本题属于“初识人工智能”范围，分析时应围绕考纲中的人工智能的定义与能力层次、图灵测试、人工智能发展阶段与重大事件、弱人工智能、强人工智能和超人工智能的区别展开。其次，要说明数据来源、算法处理和应用结果之间的关系：数据为系统提供事实基础，算法从数据中发现规律，算力和相关基础设施保证系统能够运行。再次，要结合场景说明应用价值，如提高效率、改善服务、辅助决策、降低重复劳动或提升管理能力。最后，还要注意边界条件和风险控制。涉及个人信息、推荐决策、医疗健康、教育评价等场景时，应重视隐私保护、公平性、透明性、责任归属和人工复核，避免把技术结果直接等同于最终判断。因此，回答应用分析题时既要写出技术作用，也要写出管理要求和伦理注意事项。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "某城市建设智能交通系统，需要路侧设备、云端平台和低时延通信协同。请分析物联网、云计算和5G对该系统的支撑作用。",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "首先，应从情境中的实际问题入手，明确人工智能要解决的是识别、预测、推荐、决策或辅助管理等任务。本题属于“人工智能的基础支撑”范围，分析时应围绕考纲中的数据、算法、算力对人工智能发展的支撑作用、大数据特点、分类、回归、聚类、物联网、云计算、5G的支撑价值展开。其次，要说明数据来源、算法处理和应用结果之间的关系：数据为系统提供事实基础，算法从数据中发现规律，算力和相关基础设施保证系统能够运行。再次，要结合场景说明应用价值，如提高效率、改善服务、辅助决策、降低重复劳动或提升管理能力。最后，还要注意边界条件和风险控制。涉及个人信息、推荐决策、医疗健康、教育评价等场景时，应重视隐私保护、公平性、透明性、责任归属和人工复核，避免把技术结果直接等同于最终判断。因此，回答应用分析题时既要写出技术作用，也要写出管理要求和伦理注意事项。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "某电商平台要根据历史销量预测下月备货量，并对用户群体进行分组。请分析其中涉及的回归、聚类和数据价值。",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "首先，应从情境中的实际问题入手，明确人工智能要解决的是识别、预测、推荐、决策或辅助管理等任务。本题属于“人工智能的基础支撑”范围，分析时应围绕考纲中的数据、算法、算力对人工智能发展的支撑作用、大数据特点、分类、回归、聚类、物联网、云计算、5G的支撑价值展开。其次，要说明数据来源、算法处理和应用结果之间的关系：数据为系统提供事实基础，算法从数据中发现规律，算力和相关基础设施保证系统能够运行。再次，要结合场景说明应用价值，如提高效率、改善服务、辅助决策、降低重复劳动或提升管理能力。最后，还要注意边界条件和风险控制。涉及个人信息、推荐决策、医疗健康、教育评价等场景时，应重视隐私保护、公平性、透明性、责任归属和人工复核，避免把技术结果直接等同于最终判断。因此，回答应用分析题时既要写出技术作用，也要写出管理要求和伦理注意事项。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "某邮箱系统要自动识别垃圾邮件。请分析机器学习在该场景中的应用流程。",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "首先，应从情境中的实际问题入手，明确人工智能要解决的是识别、预测、推荐、决策或辅助管理等任务。本题属于“人工智能的关键技术”范围，分析时应围绕考纲中的机器学习、知识图谱、自然语言处理、计算机视觉展开。其次，要说明数据来源、算法处理和应用结果之间的关系：数据为系统提供事实基础，算法从数据中发现规律，算力和相关基础设施保证系统能够运行。再次，要结合场景说明应用价值，如提高效率、改善服务、辅助决策、降低重复劳动或提升管理能力。最后，还要注意边界条件和风险控制。涉及个人信息、推荐决策、医疗健康、教育评价等场景时，应重视隐私保护、公平性、透明性、责任归属和人工复核，避免把技术结果直接等同于最终判断。因此，回答应用分析题时既要写出技术作用，也要写出管理要求和伦理注意事项。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "某医院希望利用病例、症状、检查项目和疾病之间的关系辅助诊断。请分析知识图谱的作用。",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "首先，应从情境中的实际问题入手，明确人工智能要解决的是识别、预测、推荐、决策或辅助管理等任务。本题属于“人工智能的关键技术”范围，分析时应围绕考纲中的机器学习、知识图谱、自然语言处理、计算机视觉展开。其次，要说明数据来源、算法处理和应用结果之间的关系：数据为系统提供事实基础，算法从数据中发现规律，算力和相关基础设施保证系统能够运行。再次，要结合场景说明应用价值，如提高效率、改善服务、辅助决策、降低重复劳动或提升管理能力。最后，还要注意边界条件和风险控制。涉及个人信息、推荐决策、医疗健康、教育评价等场景时，应重视隐私保护、公平性、透明性、责任归属和人工复核，避免把技术结果直接等同于最终判断。因此，回答应用分析题时既要写出技术作用，也要写出管理要求和伦理注意事项。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "某在线学习平台使用聊天机器人回答学生问题。请分析自然语言处理在其中的应用。",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "首先，应从情境中的实际问题入手，明确人工智能要解决的是识别、预测、推荐、决策或辅助管理等任务。本题属于“人工智能的关键技术”范围，分析时应围绕考纲中的机器学习、知识图谱、自然语言处理、计算机视觉展开。其次，要说明数据来源、算法处理和应用结果之间的关系：数据为系统提供事实基础，算法从数据中发现规律，算力和相关基础设施保证系统能够运行。再次，要结合场景说明应用价值，如提高效率、改善服务、辅助决策、降低重复劳动或提升管理能力。最后，还要注意边界条件和风险控制。涉及个人信息、推荐决策、医疗健康、教育评价等场景时，应重视隐私保护、公平性、透明性、责任归属和人工复核，避免把技术结果直接等同于最终判断。因此，回答应用分析题时既要写出技术作用，也要写出管理要求和伦理注意事项。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "某道路监控系统利用摄像头识别车辆和行人。请分析计算机视觉的作用及隐私影响。",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "首先，应从情境中的实际问题入手，明确人工智能要解决的是识别、预测、推荐、决策或辅助管理等任务。本题属于“人工智能的关键技术”范围，分析时应围绕考纲中的机器学习、知识图谱、自然语言处理、计算机视觉展开。其次，要说明数据来源、算法处理和应用结果之间的关系：数据为系统提供事实基础，算法从数据中发现规律，算力和相关基础设施保证系统能够运行。再次，要结合场景说明应用价值，如提高效率、改善服务、辅助决策、降低重复劳动或提升管理能力。最后，还要注意边界条件和风险控制。涉及个人信息、推荐决策、医疗健康、教育评价等场景时，应重视隐私保护、公平性、透明性、责任归属和人工复核，避免把技术结果直接等同于最终判断。因此，回答应用分析题时既要写出技术作用，也要写出管理要求和伦理注意事项。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "某小区使用人脸识别门禁。请分析生物特征识别流程和管理注意事项。",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "首先，应从情境中的实际问题入手，明确人工智能要解决的是识别、预测、推荐、决策或辅助管理等任务。本题属于“人工智能的关键技术”范围，分析时应围绕考纲中的机器学习、知识图谱、自然语言处理、计算机视觉展开。其次，要说明数据来源、算法处理和应用结果之间的关系：数据为系统提供事实基础，算法从数据中发现规律，算力和相关基础设施保证系统能够运行。再次，要结合场景说明应用价值，如提高效率、改善服务、辅助决策、降低重复劳动或提升管理能力。最后，还要注意边界条件和风险控制。涉及个人信息、推荐决策、医疗健康、教育评价等场景时，应重视隐私保护、公平性、透明性、责任归属和人工复核，避免把技术结果直接等同于最终判断。因此，回答应用分析题时既要写出技术作用，也要写出管理要求和伦理注意事项。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "某培训机构使用VR设备进行危险场景演练。请分析虚拟现实的应用价值。",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "首先，应从情境中的实际问题入手，明确人工智能要解决的是识别、预测、推荐、决策或辅助管理等任务。本题属于“人工智能的关键技术”范围，分析时应围绕考纲中的机器学习、知识图谱、自然语言处理、计算机视觉展开。其次，要说明数据来源、算法处理和应用结果之间的关系：数据为系统提供事实基础，算法从数据中发现规律，算力和相关基础设施保证系统能够运行。再次，要结合场景说明应用价值，如提高效率、改善服务、辅助决策、降低重复劳动或提升管理能力。最后，还要注意边界条件和风险控制。涉及个人信息、推荐决策、医疗健康、教育评价等场景时，应重视隐私保护、公平性、透明性、责任归属和人工复核，避免把技术结果直接等同于最终判断。因此，回答应用分析题时既要写出技术作用，也要写出管理要求和伦理注意事项。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "某外卖平台根据用户画像和消费记录对不同用户显示不同优惠。请分析其中的大数据杀熟和算法伦理问题。",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "首先，应从情境中的实际问题入手，明确人工智能要解决的是识别、预测、推荐、决策或辅助管理等任务。本题属于“人工智能伦理”范围，分析时应围绕考纲中的人工智能伦理、数据伦理、算法伦理、数据主义与人本主义冲突展开。其次，要说明数据来源、算法处理和应用结果之间的关系：数据为系统提供事实基础，算法从数据中发现规律，算力和相关基础设施保证系统能够运行。再次，要结合场景说明应用价值，如提高效率、改善服务、辅助决策、降低重复劳动或提升管理能力。最后，还要注意边界条件和风险控制。涉及个人信息、推荐决策、医疗健康、教育评价等场景时，应重视隐私保护、公平性、透明性、责任归属和人工复核，避免把技术结果直接等同于最终判断。因此，回答应用分析题时既要写出技术作用，也要写出管理要求和伦理注意事项。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "某社交平台把用户停留时长作为主要推荐依据。请分析数据主义与人本主义之间的冲突。",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "首先，应从情境中的实际问题入手，明确人工智能要解决的是识别、预测、推荐、决策或辅助管理等任务。本题属于“人工智能伦理”范围，分析时应围绕考纲中的人工智能伦理、数据伦理、算法伦理、数据主义与人本主义冲突展开。其次，要说明数据来源、算法处理和应用结果之间的关系：数据为系统提供事实基础，算法从数据中发现规律，算力和相关基础设施保证系统能够运行。再次，要结合场景说明应用价值，如提高效率、改善服务、辅助决策、降低重复劳动或提升管理能力。最后，还要注意边界条件和风险控制。涉及个人信息、推荐决策、医疗健康、教育评价等场景时，应重视隐私保护、公平性、透明性、责任归属和人工复核，避免把技术结果直接等同于最终判断。因此，回答应用分析题时既要写出技术作用，也要写出管理要求和伦理注意事项。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "某制造企业利用摄像头自动检测产品表面划痕。请分析表面缺陷检测对质量管控的作用。",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "首先，应从情境中的实际问题入手，明确人工智能要解决的是识别、预测、推荐、决策或辅助管理等任务。本题属于“人工智能+制造”范围，分析时应围绕考纲中的智能制造技术基础、智能分拣、智能决策、表面缺陷检测展开。其次，要说明数据来源、算法处理和应用结果之间的关系：数据为系统提供事实基础，算法从数据中发现规律，算力和相关基础设施保证系统能够运行。再次，要结合场景说明应用价值，如提高效率、改善服务、辅助决策、降低重复劳动或提升管理能力。最后，还要注意边界条件和风险控制。涉及个人信息、推荐决策、医疗健康、教育评价等场景时，应重视隐私保护、公平性、透明性、责任归属和人工复核，避免把技术结果直接等同于最终判断。因此，回答应用分析题时既要写出技术作用，也要写出管理要求和伦理注意事项。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "某工厂根据订单、库存和季节变化预测需求。请分析需求预测对供应链优化的作用。",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "首先，应从情境中的实际问题入手，明确人工智能要解决的是识别、预测、推荐、决策或辅助管理等任务。本题属于“人工智能+制造”范围，分析时应围绕考纲中的智能制造技术基础、智能分拣、智能决策、表面缺陷检测展开。其次，要说明数据来源、算法处理和应用结果之间的关系：数据为系统提供事实基础，算法从数据中发现规律，算力和相关基础设施保证系统能够运行。再次，要结合场景说明应用价值，如提高效率、改善服务、辅助决策、降低重复劳动或提升管理能力。最后，还要注意边界条件和风险控制。涉及个人信息、推荐决策、医疗健康、教育评价等场景时，应重视隐私保护、公平性、透明性、责任归属和人工复核，避免把技术结果直接等同于最终判断。因此，回答应用分析题时既要写出技术作用，也要写出管理要求和伦理注意事项。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "某学校建立学习平台，记录学生作业、测验和学习路径。请分析人工智能在教学、管理和评价中的应用。",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "首先，应从情境中的实际问题入手，明确人工智能要解决的是识别、预测、推荐、决策或辅助管理等任务。本题属于“人工智能+教育”范围，分析时应围绕考纲中的个性化教学、教师角色变化、学习方式变化、教学、管理、评价中的典型应用展开。其次，要说明数据来源、算法处理和应用结果之间的关系：数据为系统提供事实基础，算法从数据中发现规律，算力和相关基础设施保证系统能够运行。再次，要结合场景说明应用价值，如提高效率、改善服务、辅助决策、降低重复劳动或提升管理能力。最后，还要注意边界条件和风险控制。涉及个人信息、推荐决策、医疗健康、教育评价等场景时，应重视隐私保护、公平性、透明性、责任归属和人工复核，避免把技术结果直接等同于最终判断。因此，回答应用分析题时既要写出技术作用，也要写出管理要求和伦理注意事项。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "某教师使用智能系统为学生推荐不同练习。请分析人工智能实现个性化教学的方式。",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "首先，应从情境中的实际问题入手，明确人工智能要解决的是识别、预测、推荐、决策或辅助管理等任务。本题属于“人工智能+教育”范围，分析时应围绕考纲中的个性化教学、教师角色变化、学习方式变化、教学、管理、评价中的典型应用展开。其次，要说明数据来源、算法处理和应用结果之间的关系：数据为系统提供事实基础，算法从数据中发现规律，算力和相关基础设施保证系统能够运行。再次，要结合场景说明应用价值，如提高效率、改善服务、辅助决策、降低重复劳动或提升管理能力。最后，还要注意边界条件和风险控制。涉及个人信息、推荐决策、医疗健康、教育评价等场景时，应重视隐私保护、公平性、透明性、责任归属和人工复核，避免把技术结果直接等同于最终判断。因此，回答应用分析题时既要写出技术作用，也要写出管理要求和伦理注意事项。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "某电商企业使用AIGC生成商品文案、图片和短视频。请分析应用价值与风险。",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "首先，应从情境中的实际问题入手，明确人工智能要解决的是识别、预测、推荐、决策或辅助管理等任务。本题属于“人工智能+内容生产”范围，分析时应围绕考纲中的AIGC的三个层次、典型内容生成类型、跨模态生成、内容生产应用与法律伦理问题展开。其次，要说明数据来源、算法处理和应用结果之间的关系：数据为系统提供事实基础，算法从数据中发现规律，算力和相关基础设施保证系统能够运行。再次，要结合场景说明应用价值，如提高效率、改善服务、辅助决策、降低重复劳动或提升管理能力。最后，还要注意边界条件和风险控制。涉及个人信息、推荐决策、医疗健康、教育评价等场景时，应重视隐私保护、公平性、透明性、责任归属和人工复核，避免把技术结果直接等同于最终判断。因此，回答应用分析题时既要写出技术作用，也要写出管理要求和伦理注意事项。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "某传媒机构使用AIGC辅助生成新闻素材和视频脚本。请分析内容生产效率提升及法律伦理问题。",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "首先，应从情境中的实际问题入手，明确人工智能要解决的是识别、预测、推荐、决策或辅助管理等任务。本题属于“人工智能+内容生产”范围，分析时应围绕考纲中的AIGC的三个层次、典型内容生成类型、跨模态生成、内容生产应用与法律伦理问题展开。其次，要说明数据来源、算法处理和应用结果之间的关系：数据为系统提供事实基础，算法从数据中发现规律，算力和相关基础设施保证系统能够运行。再次，要结合场景说明应用价值，如提高效率、改善服务、辅助决策、降低重复劳动或提升管理能力。最后，还要注意边界条件和风险控制。涉及个人信息、推荐决策、医疗健康、教育评价等场景时，应重视隐私保护、公平性、透明性、责任归属和人工复核，避免把技术结果直接等同于最终判断。因此，回答应用分析题时既要写出技术作用，也要写出管理要求和伦理注意事项。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "论述人工智能的基本技术体系及其社会应用价值。",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "人工智能导论课程强调从基本概念、基础支撑、关键技术、伦理规范和行业应用几个方面理解人工智能。围绕“论述人工智能的基本技术体系及其社会应用价值”这一问题，首先要把握相关概念。初识人工智能的学习重点包括人工智能的定义与能力层次、图灵测试、人工智能发展阶段与重大事件、弱人工智能、强人工智能和超人工智能的区别。这些内容不是孤立知识点，而是人工智能从技术实现走向现实应用的组成部分。其次，要说明人工智能的作用路径。数据提供材料，算法发现规律，算力保障运行，物联网、云计算和5G等技术扩大了应用空间；机器学习、知识图谱、自然语言处理、计算机视觉、人机交互等关键技术则把数据处理能力转化为具体服务。再次，要结合行业场景分析价值。人工智能可以提高信息处理效率，辅助人们识别问题、预测趋势、优化流程和改善服务体验，在制造、教育、内容生产、医疗、农业等领域均具有应用意义。同时也要看到风险。人工智能应用会带来隐私泄露、数据偏见、算法不透明、责任不清和过度依赖技术等问题。因此，应坚持以人为本，把伦理要求、法律意识和人工复核机制纳入系统建设过程，使人工智能服务于人的发展和社会公共利益。总之，人工智能的学习既要理解技术框架，也要理解应用边界，做到会识记、能理解、可分析。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "论述人工智能关键技术在现实生活中的应用。",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "人工智能导论课程强调从基本概念、基础支撑、关键技术、伦理规范和行业应用几个方面理解人工智能。围绕“论述人工智能关键技术在现实生活中的应用”这一问题，首先要把握相关概念。人工智能的关键技术的学习重点包括机器学习、知识图谱、自然语言处理、计算机视觉。这些内容不是孤立知识点，而是人工智能从技术实现走向现实应用的组成部分。其次，要说明人工智能的作用路径。数据提供材料，算法发现规律，算力保障运行，物联网、云计算和5G等技术扩大了应用空间；机器学习、知识图谱、自然语言处理、计算机视觉、人机交互等关键技术则把数据处理能力转化为具体服务。再次，要结合行业场景分析价值。人工智能可以提高信息处理效率，辅助人们识别问题、预测趋势、优化流程和改善服务体验，在制造、教育、内容生产、医疗、农业等领域均具有应用意义。同时也要看到风险。人工智能应用会带来隐私泄露、数据偏见、算法不透明、责任不清和过度依赖技术等问题。因此，应坚持以人为本，把伦理要求、法律意识和人工复核机制纳入系统建设过程，使人工智能服务于人的发展和社会公共利益。总之，人工智能的学习既要理解技术框架，也要理解应用边界，做到会识记、能理解、可分析。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "论述人工智能伦理建设的重要性。",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "人工智能导论课程强调从基本概念、基础支撑、关键技术、伦理规范和行业应用几个方面理解人工智能。围绕“论述人工智能伦理建设的重要性”这一问题，首先要把握相关概念。人工智能伦理的学习重点包括人工智能伦理、数据伦理、算法伦理、数据主义与人本主义冲突、大数据杀熟。这些内容不是孤立知识点，而是人工智能从技术实现走向现实应用的组成部分。其次，要说明人工智能的作用路径。数据提供材料，算法发现规律，算力保障运行，物联网、云计算和5G等技术扩大了应用空间；机器学习、知识图谱、自然语言处理、计算机视觉、人机交互等关键技术则把数据处理能力转化为具体服务。再次，要结合行业场景分析价值。人工智能可以提高信息处理效率，辅助人们识别问题、预测趋势、优化流程和改善服务体验，在制造、教育、内容生产、医疗、农业等领域均具有应用意义。同时也要看到风险。人工智能应用会带来隐私泄露、数据偏见、算法不透明、责任不清和过度依赖技术等问题。因此，应坚持以人为本，把伦理要求、法律意识和人工复核机制纳入系统建设过程，使人工智能服务于人的发展和社会公共利益。总之，人工智能的学习既要理解技术框架，也要理解应用边界，做到会识记、能理解、可分析。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "论述人工智能对教育教学方式的影响。",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "人工智能导论课程强调从基本概念、基础支撑、关键技术、伦理规范和行业应用几个方面理解人工智能。围绕“论述人工智能对教育教学方式的影响”这一问题，首先要把握相关概念。人工智能+教育的学习重点包括个性化教学、教师角色变化、学习方式变化、教学、管理、评价中的典型应用。这些内容不是孤立知识点，而是人工智能从技术实现走向现实应用的组成部分。其次，要说明人工智能的作用路径。数据提供材料，算法发现规律，算力保障运行，物联网、云计算和5G等技术扩大了应用空间；机器学习、知识图谱、自然语言处理、计算机视觉、人机交互等关键技术则把数据处理能力转化为具体服务。再次，要结合行业场景分析价值。人工智能可以提高信息处理效率，辅助人们识别问题、预测趋势、优化流程和改善服务体验，在制造、教育、内容生产、医疗、农业等领域均具有应用意义。同时也要看到风险。人工智能应用会带来隐私泄露、数据偏见、算法不透明、责任不清和过度依赖技术等问题。因此，应坚持以人为本，把伦理要求、法律意识和人工复核机制纳入系统建设过程，使人工智能服务于人的发展和社会公共利益。总之，人工智能的学习既要理解技术框架，也要理解应用边界，做到会识记、能理解、可分析。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "论述人工智能赋能医疗的价值、风险与发展方向。",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "人工智能导论课程强调从基本概念、基础支撑、关键技术、伦理规范和行业应用几个方面理解人工智能。围绕“论述人工智能赋能医疗的价值、风险与发展方向”这一问题，首先要把握相关概念。人工智能+医疗的学习重点包括辅助医疗决策、医院管理、诊疗流程优化、影像诊断、药物研发、智慧康养。这些内容不是孤立知识点，而是人工智能从技术实现走向现实应用的组成部分。其次，要说明人工智能的作用路径。数据提供材料，算法发现规律，算力保障运行，物联网、云计算和5G等技术扩大了应用空间；机器学习、知识图谱、自然语言处理、计算机视觉、人机交互等关键技术则把数据处理能力转化为具体服务。再次，要结合行业场景分析价值。人工智能可以提高信息处理效率，辅助人们识别问题、预测趋势、优化流程和改善服务体验，在制造、教育、内容生产、医疗、农业等领域均具有应用意义。同时也要看到风险。人工智能应用会带来隐私泄露、数据偏见、算法不透明、责任不清和过度依赖技术等问题。因此，应坚持以人为本，把伦理要求、法律意识和人工复核机制纳入系统建设过程，使人工智能服务于人的发展和社会公共利益。总之，人工智能的学习既要理解技术框架，也要理解应用边界，做到会识记、能理解、可分析。"
+      }
+    },
+    {
+      "question_bank_id": 1,
+      "question_type": "short_answer",
+      "stem": "论述人工智能推动农业或制造业智能化转型的路径。",
+      "blank_count": 0,
+      "options": [],
+      "explanation": null,
+      "correct_answer": {
+        "type": "short_answer",
+        "reference": "人工智能导论课程强调从基本概念、基础支撑、关键技术、伦理规范和行业应用几个方面理解人工智能。围绕“论述人工智能推动农业或制造业智能化转型的路径”这一问题，首先要把握相关概念。人工智能+农业的学习重点包括智能种植、智慧养殖、农业机器人、农产品溯源、农业金融保险、农业高质量、可持续与精准发展。这些内容不是孤立知识点，而是人工智能从技术实现走向现实应用的组成部分。其次，要说明人工智能的作用路径。数据提供材料，算法发现规律，算力保障运行，物联网、云计算和5G等技术扩大了应用空间；机器学习、知识图谱、自然语言处理、计算机视觉、人机交互等关键技术则把数据处理能力转化为具体服务。再次，要结合行业场景分析价值。人工智能可以提高信息处理效率，辅助人们识别问题、预测趋势、优化流程和改善服务体验，在制造、教育、内容生产、医疗、农业等领域均具有应用意义。同时也要看到风险。人工智能应用会带来隐私泄露、数据偏见、算法不透明、责任不清和过度依赖技术等问题。因此，应坚持以人为本，把伦理要求、法律意识和人工复核机制纳入系统建设过程，使人工智能服务于人的发展和社会公共利益。总之，人工智能的学习既要理解技术框架，也要理解应用边界，做到会识记、能理解、可分析。"
+      }
+    }
+  ]
+}

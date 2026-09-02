@@ -1,0 +1,10 @@
+trunk-version = ">=0.21.0"
+
+[build]
+target = "frontend/index.html"
+dist = "dist"
+public_url = "/"
+filehash = false
+
+[watch]
+watch = ["src", "frontend"]

@@ -1,0 +1,16 @@
+{
+  "name": "xiaoluoquiz-frontend",
+  "private": true,
+  "scripts": {
+    "build:css": "tailwindcss -i ./frontend/app.css -o ./frontend/generated.css --minify",
+    "build:frontend": "npm run build:css && env -u NO_COLOR trunk build",
+    "pretest:e2e": "npm run build:frontend",
+    "test:e2e": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.62.1",
+    "@tailwindcss/cli": "4.3.3",
+    "daisyui": "5.7.24",
+    "tailwindcss": "4.3.3"
+  }
+}

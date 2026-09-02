@@ -1,0 +1,10 @@
+/target/
+/dist/
+/node_modules/
+/frontend/generated.css
+/playwright-report/
+/test-results/
+/tmp/
+.env
+.env.*
+!.env.example

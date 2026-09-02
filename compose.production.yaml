@@ -1,0 +1,82 @@
+name: xiaoluoquiz
+
+services:
+  app:
+    image: ${XIAOLUOQUIZ_IMAGE:-xiaoluoquiz:local}
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: runtime
+    init: true
+    restart: unless-stopped
+    read_only: true
+    tmpfs:
+      - /tmp
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    environment:
+      APP_HOST: 0.0.0.0
+      APP_PORT: 8000
+      STATIC_DIR: /app/dist
+      DATABASE_URL: ${DATABASE_URL:-}
+      INITIAL_PASSWORD: ${INITIAL_PASSWORD:-}
+      INITIAL_ADMIN_USERNAME: ${INITIAL_ADMIN_USERNAME:-admin}
+      INITIAL_ADMIN_DISPLAY_NAME: ${INITIAL_ADMIN_DISPLAY_NAME:-系统管理员}
+      DB_POOL_SIZE: ${DB_POOL_SIZE:-10}
+      SESSION_TTL_SECONDS: ${SESSION_TTL_SECONDS:-43200}
+      RUST_LOG: ${RUST_LOG:-xiaoluoquiz=info}
+    expose:
+      - "8000"
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "--silent", "--show-error", "http://127.0.0.1:8000/api/v1/health"]
+      interval: 30s
+      timeout: 5s
+      start_period: 15s
+      retries: 5
+    networks:
+      - internal
+
+  migrate:
+    image: ${XIAOLUOQUIZ_IMAGE:-xiaoluoquiz:local}
+    entrypoint: ["/usr/local/bin/sqlx"]
+    command: ["migrate", "run", "--source", "/app/migrations"]
+    restart: "no"
+    read_only: true
+    tmpfs:
+      - /tmp
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    environment:
+      DATABASE_URL: ${DATABASE_URL:-}
+    networks:
+      - internal
+
+  caddy:
+    image: ${CADDY_IMAGE:-caddy:2-alpine}
+    restart: unless-stopped
+    depends_on:
+      app:
+        condition: service_healthy
+    environment:
+      DOMAIN: ${DOMAIN:-:80}
+    ports:
+      - "${HTTP_PORT:-80}:80"
+      - "${HTTPS_PORT:-443}:443"
+    volumes:
+      - caddy_data:/data
+      - caddy_config:/config
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+    networks:
+      - internal
+
+networks:
+  internal:
+    driver: bridge
+
+volumes:
+  caddy_data:
+  caddy_config:

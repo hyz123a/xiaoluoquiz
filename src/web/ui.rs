@@ -1,0 +1,14 @@
+pub const APP_SHELL: &str = "app-shell";
+pub const APP_CONTAINER: &str = "app-container";
+pub const APP_HEADER: &str = "app-header";
+pub const APP_BRAND: &str = "app-brand";
+pub const APP_BRAND_MARK: &str = "app-brand-mark";
+pub const APP_HEADER_ACTIONS: &str = "app-header-actions";
+pub const APP_NAV_MOBILE: &str = "app-nav-mobile";
+pub const APP_NAV_TOGGLE: &str = "btn btn-outline app-nav-toggle";
+pub const APP_NAV_MENU: &str = "app-nav-menu";
+pub const APP_NAV_DESKTOP: &str = "app-nav-desktop";
+pub const APP_NAV_LINK: &str = "btn btn-sm app-nav-link";
+pub const APP_CONTENT: &str = "app-content";
+pub const APP_TOOLBAR: &str = "app-toolbar";
+pub const AUTH_SHELL: &str = "auth-shell";
