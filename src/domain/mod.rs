@@ -11,7 +11,8 @@ pub use paper::{
 };
 pub use question::{
     AdminQuestion, AdminQuestionInput, AnswerPayload, CorrectAnswer, Evaluation, EvaluationError,
-    EvaluationStatus, InvalidQuestionStatus, InvalidQuestionType, PublicQuestion, QuestionBank,
-    QuestionBankInput, QuestionBankValidationError, QuestionImportBatch, QuestionOption,
-    QuestionStatus, QuestionType, QuestionValidationError, ScoringQuestion, evaluate_answer,
+    EvaluationStatus, InvalidQuestionStatus, InvalidQuestionType, PracticeStats, PublicQuestion,
+    QuestionBank, QuestionBankInput, QuestionBankValidationError, QuestionImportBatch,
+    QuestionOption, QuestionStatus, QuestionType, QuestionValidationError, ScoringQuestion,
+    evaluate_answer,
 };

@@ -1,6 +1,6 @@
 import { expect, test, type Page } from '@playwright/test';
 
-import { expandPracticeQuestionNavigation, loginAsAdmin } from './helpers';
+import { expandPracticeQuestionNavigation, loginAsAdmin, openPracticeQuestion } from './helpers';
 
 const SINGLE_STEM = 'Rust 的包管理工具是什么？';
 const MULTIPLE_STEM = '以下哪些是 Rust 开发工具？';
@@ -189,6 +189,97 @@ test.describe('练习页面', () => {
     });
     await page.reload();
     await expect(page.getByTestId('error-state')).toBeVisible();
+  });
+
+  test('答题卡片实时显示整体正确率，并排除简答题和重复作答', async ({ page }) => {
+    await loginAsAdmin(page);
+    await page.evaluate(() => localStorage.clear());
+
+    const accuracy = page.getByTestId('practice-accuracy');
+    await expect(accuracy).toBeVisible();
+    await expect(accuracy).toHaveAttribute('data-answered-count', /^\d+$/);
+    await expect(accuracy).toHaveAttribute('data-correct-count', /^\d+$/);
+
+    await openPracticeQuestion(page, MULTIPLE_STEM);
+    const multiple = questionCard(page, MULTIPLE_STEM);
+    await multiple.getByLabel(/A．Cargo/).check();
+    await multiple.getByLabel(/C．rustc/).check();
+    await multiple.getByLabel(/E．Clippy/).check();
+
+    const firstResponsePromise = page.waitForResponse(
+      (response) =>
+        response.request().method() === 'POST' &&
+        response.url().includes('/api/v1/questions/') &&
+        response.url().endsWith('/check'),
+    );
+    await multiple.getByTestId('submit-answer').click();
+    const firstResponse = await firstResponsePromise;
+    expect(firstResponse.ok()).toBe(true);
+    const firstBody = await firstResponse.json();
+    await expect(accuracy).toHaveAttribute(
+      'data-answered-count',
+      String(firstBody.practice_stats.answered_count),
+    );
+    await expect(accuracy).toHaveAttribute(
+      'data-correct-count',
+      String(firstBody.practice_stats.correct_count),
+    );
+
+    await multiple.getByLabel(/B．npm/).check();
+    const repeatedResponsePromise = page.waitForResponse(
+      (response) =>
+        response.request().method() === 'POST' &&
+        response.url().includes('/api/v1/questions/') &&
+        response.url().endsWith('/check'),
+    );
+    await multiple.getByTestId('submit-answer').click();
+    const repeatedResponse = await repeatedResponsePromise;
+    expect(repeatedResponse.ok()).toBe(true);
+    const repeatedBody = await repeatedResponse.json();
+    expect(repeatedBody.practice_stats).toEqual(firstBody.practice_stats);
+    await expect(accuracy).toHaveAttribute(
+      'data-answered-count',
+      String(firstBody.practice_stats.answered_count),
+    );
+    await expect(accuracy).toHaveAttribute(
+      'data-correct-count',
+      String(firstBody.practice_stats.correct_count),
+    );
+
+    await openPracticeQuestion(page, SHORT_ANSWER_STEM);
+    const shortAnswer = questionCard(page, SHORT_ANSWER_STEM);
+    await shortAnswer.locator('textarea').fill('SQLx 提供 Rust 到数据库的异步访问。');
+    const shortResponsePromise = page.waitForResponse(
+      (response) =>
+        response.request().method() === 'POST' &&
+        response.url().includes('/api/v1/questions/') &&
+        response.url().endsWith('/check'),
+    );
+    await shortAnswer.getByTestId('submit-answer').click();
+    const shortResponse = await shortResponsePromise;
+    expect(shortResponse.ok()).toBe(true);
+    const shortBody = await shortResponse.json();
+    expect(shortBody.status).toBe('needs_review');
+    expect(shortBody.practice_stats).toEqual(firstBody.practice_stats);
+    await expect(accuracy).toHaveAttribute(
+      'data-answered-count',
+      String(firstBody.practice_stats.answered_count),
+    );
+    await expect(accuracy).toHaveAttribute(
+      'data-correct-count',
+      String(firstBody.practice_stats.correct_count),
+    );
+
+    await page.reload();
+    await expect(page.getByTestId('question-list')).toBeVisible();
+    await expect(accuracy).toHaveAttribute(
+      'data-answered-count',
+      String(firstBody.practice_stats.answered_count),
+    );
+    await expect(accuracy).toHaveAttribute(
+      'data-correct-count',
+      String(firstBody.practice_stats.correct_count),
+    );
   });
 
   test('移动端题目页面没有横向溢出', async ({ page }) => {

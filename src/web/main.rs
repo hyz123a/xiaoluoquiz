@@ -20,8 +20,8 @@ use xiaoluoquiz::domain::{
     AdminQuestionInput, AnswerPayload, AttemptStatus, CandidateField, CandidateFieldConfig,
     CandidateInfo, CorrectAnswer, CreatePaperInput, EvaluationStatus, ExamAttempt, ExamQuestion,
     ExamResult, GradingStatus, PaperMode, PaperQuestionInput, PaperRuntimeStatus, PaperStatus,
-    PublicQuestion, PublishedPaper, QuestionBank, QuestionBankInput, QuestionImportBatch,
-    QuestionOption, QuestionStatus, QuestionType, ResultVisibility,
+    PracticeStats, PublicQuestion, PublishedPaper, QuestionBank, QuestionBankInput,
+    QuestionImportBatch, QuestionOption, QuestionStatus, QuestionType, ResultVisibility,
     auth::{ClassGroup, CreateClassInput, CreateUserInput, UserIdentity, UserRole},
 };
 
@@ -31,6 +31,7 @@ const AUTH_ME_ENDPOINT: &str = "/api/v1/auth/me";
 const AUTH_CHANGE_PASSWORD_ENDPOINT: &str = "/api/v1/auth/change-password";
 const AUTH_LOGOUT_ENDPOINT: &str = "/api/v1/auth/logout";
 const QUESTIONS_ENDPOINT: &str = "/api/v1/questions";
+const PRACTICE_STATS_ENDPOINT: &str = "/api/v1/practice/stats";
 const QUESTION_BANKS_ENDPOINT: &str = "/api/v1/question-banks";
 const ADMIN_QUESTIONS_ENDPOINT: &str = "/api/v1/admin/questions";
 const ADMIN_QUESTION_IMPORT_ENDPOINT: &str = "/api/v1/admin/questions/import";
@@ -145,6 +146,7 @@ struct CheckAnswerResponse {
     correct: Option<bool>,
     explanation: Option<String>,
     correct_answer: CorrectAnswer,
+    practice_stats: PracticeStats,
 }
 
 #[derive(Debug, Clone, PartialEq)]
@@ -169,6 +171,13 @@ enum PracticeLoadState {
         banks: Vec<QuestionBank>,
         questions: Vec<PublicQuestion>,
     },
+    Error(String),
+}
+
+#[derive(Debug, Clone, PartialEq)]
+enum PracticeStatsLoadState {
+    Loading,
+    Ready(PracticeStats),
     Error(String),
 }
 
@@ -873,6 +882,7 @@ fn write_answer_map(key: &str, answers: &AnswerMap) {
 #[function_component(PracticeApp)]
 fn practice_app(props: &PracticeAppProps) -> Html {
     let load_state = use_state(|| PracticeLoadState::Loading);
+    let practice_stats_state = use_state(|| PracticeStatsLoadState::Loading);
     let question_type_filter = use_state(|| None::<QuestionType>);
     let question_bank_filter = use_state(|| None::<i64>);
     let question_navigation_expanded = use_state(|| false);
@@ -881,6 +891,22 @@ fn practice_app(props: &PracticeAppProps) -> Html {
     let answer_storage_key = practice_answer_storage_key(props.user.id);
     let initial_answers = read_answer_map(&answer_storage_key);
     let answers = use_state(move || initial_answers);
+
+    {
+        let practice_stats_state = practice_stats_state.clone();
+        let user_id = props.user.id;
+        use_effect_with(user_id, move |_| {
+            practice_stats_state.set(PracticeStatsLoadState::Loading);
+            spawn_local(async move {
+                match get_json::<PracticeStats>(PRACTICE_STATS_ENDPOINT, "整体正确率加载失败").await
+                {
+                    Ok(stats) => practice_stats_state.set(PracticeStatsLoadState::Ready(stats)),
+                    Err(error) => practice_stats_state.set(PracticeStatsLoadState::Error(error)),
+                }
+            });
+            || ()
+        });
+    }
 
     {
         let load_state = load_state.clone();
@@ -951,6 +977,12 @@ fn practice_app(props: &PracticeAppProps) -> Html {
     let on_question_navigation_toggle = {
         let question_navigation_expanded = question_navigation_expanded.clone();
         Callback::from(move |_| question_navigation_expanded.set(!*question_navigation_expanded))
+    };
+    let on_practice_stats_updated = {
+        let practice_stats_state = practice_stats_state.clone();
+        Callback::from(move |stats: PracticeStats| {
+            practice_stats_state.set(PracticeStatsLoadState::Ready(stats));
+        })
     };
 
     let question_type_value = question_type_filter
@@ -1042,6 +1074,7 @@ fn practice_app(props: &PracticeAppProps) -> Html {
                                 <div>
                                     <h2 class="font-bold">{"题目导航"}</h2>
                                     <p class="mt-1 text-xs text-base-content/60">{"点击展开题号导航；深色圆形按钮表示已经填写答案。"}</p>
+                                    { practice_accuracy_view(&practice_stats_state) }
                                 </div>
                                 <div class="flex flex-wrap items-center gap-2">
                                     <label class="form-control w-full sm:w-40">
@@ -1105,7 +1138,13 @@ fn practice_app(props: &PracticeAppProps) -> Html {
                         </div>
                     </section>
                     <div class="grid gap-5" data-testid="question-list">
-                        <QuestionCard key={question_id.to_string()} question={question} answer={answer} on_answer={on_answer} />
+                        <QuestionCard
+                            key={question_id.to_string()}
+                            question={question}
+                            answer={answer}
+                            on_answer={on_answer}
+                            on_practice_stats_updated={on_practice_stats_updated.clone()}
+                        />
                     </div>
                     <div class="flex flex-wrap items-center justify-between gap-3">
                         <button class="btn btn-outline" type="button" onclick={go_to_previous.clone()} disabled={current_index == 0} data-testid="practice-previous">{"上一题"}</button>
@@ -1164,6 +1203,43 @@ struct QuestionCardProps {
     question: PublicQuestion,
     answer: Option<AnswerPayload>,
     on_answer: Callback<AnswerPayload>,
+    on_practice_stats_updated: Callback<PracticeStats>,
+}
+
+fn practice_accuracy_view(state: &PracticeStatsLoadState) -> Html {
+    match state {
+        PracticeStatsLoadState::Loading => html! {
+            <div class="mt-3 flex min-h-12 items-center rounded-box bg-base-200/60 px-3 py-2 text-sm text-base-content/65" data-testid="practice-accuracy" data-status="loading">
+                {"整体正确率加载中…"}
+            </div>
+        },
+        PracticeStatsLoadState::Error(error) => html! {
+            <div class="alert alert-error mt-3 min-h-12 py-2 text-sm" data-testid="practice-accuracy" data-status="error" role="alert">
+                { format!("整体正确率加载失败：{error}") }
+            </div>
+        },
+        PracticeStatsLoadState::Ready(stats) => {
+            let accuracy = stats.accuracy_percent.unwrap_or(0.0);
+            html! {
+                <div
+                    class="mt-3 flex min-w-0 flex-wrap items-baseline gap-x-3 gap-y-1 rounded-box bg-base-200/60 px-3 py-2"
+                    data-testid="practice-accuracy"
+                    data-status="ready"
+                    data-answered-count={stats.answered_count.to_string()}
+                    data-correct-count={stats.correct_count.to_string()}
+                    data-accuracy-percent={format!("{accuracy:.2}")}
+                >
+                    <span class="text-xs font-semibold text-base-content/65">{"整体正确率"}</span>
+                    <strong class="text-lg text-primary">{ format!("{accuracy:.2}%") }</strong>
+                    <span class="text-sm text-base-content/75">{ format!("答对 {} / 已作答 {} 题", stats.correct_count, stats.answered_count) }</span>
+                    <span class="text-xs text-base-content/55">{"简答题不计入"}</span>
+                    if stats.answered_count == 0 {
+                        <span class="basis-full text-xs text-base-content/55">{"暂无计入正确率的作答"}</span>
+                    }
+                </div>
+            }
+        }
+    }
 }
 
 #[function_component(QuestionCard)]
@@ -1188,6 +1264,7 @@ fn question_card(props: &QuestionCardProps) -> Html {
         let validation_error = validation_error.clone();
         let result = result.clone();
         let submitting = submitting.clone();
+        let on_practice_stats_updated = props.on_practice_stats_updated.clone();
         let question_type = question.question_type;
         let question_id = question.id;
 
@@ -1207,18 +1284,24 @@ fn question_card(props: &QuestionCardProps) -> Html {
             let validation_error = validation_error.clone();
             let result = result.clone();
             let submitting = submitting.clone();
+            let on_practice_stats_updated = on_practice_stats_updated.clone();
             spawn_local(async move {
                 let request = Request::post(&format!("/api/v1/questions/{question_id}/check"))
                     .json(&CheckAnswerRequest { answer });
                 match request {
                     Ok(request) => match request.send().await {
-                        Ok(response) if response.ok() => match response.json().await {
-                            Ok(payload) => result.set(Some(payload)),
-                            Err(error) => validation_error.set(Some(network_error_message(
-                                "读取判题结果失败",
-                                error.to_string(),
-                            ))),
-                        },
+                        Ok(response) if response.ok() => {
+                            match response.json::<CheckAnswerResponse>().await {
+                                Ok(payload) => {
+                                    on_practice_stats_updated.emit(payload.practice_stats.clone());
+                                    result.set(Some(payload));
+                                }
+                                Err(error) => validation_error.set(Some(network_error_message(
+                                    "读取判题结果失败",
+                                    error.to_string(),
+                                ))),
+                            }
+                        }
                         Ok(response) => validation_error
                             .set(Some(read_api_error(response, "提交答案失败").await)),
                         Err(error) => validation_error.set(Some(network_error_message(

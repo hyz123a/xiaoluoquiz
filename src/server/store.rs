@@ -2,11 +2,11 @@ use async_trait::async_trait;
 use sqlx::{FromRow, PgPool, Postgres, Transaction};
 
 use crate::application::{
-    AdminQuestionFilters, QuestionImportItem, QuestionImportItemStatus, QuestionImportReport,
-    QuestionStore, StoreError,
+    AdminQuestionFilters, PracticeStore, QuestionImportItem, QuestionImportItemStatus,
+    QuestionImportReport, QuestionStore, StoreError,
 };
 use crate::domain::{
-    AdminQuestion, AdminQuestionInput, CorrectAnswer, PublicQuestion, QuestionBank,
+    AdminQuestion, AdminQuestionInput, CorrectAnswer, PracticeStats, PublicQuestion, QuestionBank,
     QuestionBankInput, QuestionOption, QuestionStatus, QuestionType, ScoringQuestion,
 };
 
@@ -328,6 +328,28 @@ ORDER BY b.id
         .fetch_all(&self.pool)
         .await?)
     }
+
+    async fn fetch_practice_stats(&self, user_id: i64) -> Result<PracticeStats, StoreError> {
+        let (answered_count, correct_count) = sqlx::query_as::<_, (i64, i64)>(
+            r#"
+SELECT
+    COUNT(*)::bigint,
+    COUNT(*) FILTER (WHERE is_correct)::bigint
+FROM practice_records
+WHERE user_id = $1
+"#,
+        )
+        .bind(user_id)
+        .fetch_one(&self.pool)
+        .await?;
+        let answered_count = u32::try_from(answered_count).map_err(|_| {
+            StoreError::InvalidData("practice answered count is out of range".to_owned())
+        })?;
+        let correct_count = u32::try_from(correct_count).map_err(|_| {
+            StoreError::InvalidData("practice correct count is out of range".to_owned())
+        })?;
+        Ok(PracticeStats::from_counts(answered_count, correct_count))
+    }
 }
 
 #[async_trait]
@@ -558,6 +580,42 @@ ORDER BY q.updated_at DESC, q.id DESC
         Self::insert_audit_log(&mut transaction, "question_archived", id).await?;
         transaction.commit().await?;
         self.get_admin(id).await
+    }
+}
+
+#[async_trait]
+impl PracticeStore for PgQuestionStore {
+    async fn get_practice_stats(&self, user_id: i64) -> Result<PracticeStats, StoreError> {
+        self.fetch_practice_stats(user_id).await
+    }
+
+    async fn record_practice_answer(
+        &self,
+        user_id: i64,
+        question_id: i64,
+        revision_id: i64,
+        answer: &crate::domain::AnswerPayload,
+        correct: bool,
+    ) -> Result<PracticeStats, StoreError> {
+        let answer_payload = serde_json::to_value(answer)
+            .map_err(|error| StoreError::InvalidData(error.to_string()))?;
+        sqlx::query(
+            r#"
+INSERT INTO practice_records (
+    user_id, question_id, revision_id, answer_payload, is_correct
+)
+VALUES ($1, $2, $3, $4, $5)
+ON CONFLICT (user_id, question_id) DO NOTHING
+"#,
+        )
+        .bind(user_id)
+        .bind(question_id)
+        .bind(revision_id)
+        .bind(answer_payload)
+        .bind(correct)
+        .execute(&self.pool)
+        .await?;
+        self.fetch_practice_stats(user_id).await
     }
 }
 

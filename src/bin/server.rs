@@ -34,8 +34,9 @@ async fn main() -> Result<(), Box<dyn Error>> {
         .await?;
     let app = application_router(
         AppState::with_stores_and_session_ttl(
-            question_store,
+            question_store.clone(),
             auth_store,
+            question_store,
             paper_store,
             config.initial_password,
             config.session_ttl_seconds,

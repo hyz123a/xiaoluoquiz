@@ -18,7 +18,7 @@ use thiserror::Error;
 
 use crate::domain::{
     AdminQuestion, AdminQuestionInput, AnswerPayload, CorrectAnswer, Evaluation, EvaluationError,
-    PublicQuestion, QuestionBank, QuestionBankInput, QuestionBankValidationError,
+    PracticeStats, PublicQuestion, QuestionBank, QuestionBankInput, QuestionBankValidationError,
     QuestionImportBatch, QuestionStatus, QuestionType, QuestionValidationError, ScoringQuestion,
     evaluate_answer,
 };
@@ -102,6 +102,19 @@ pub trait QuestionStore: Send + Sync {
     async fn archive(&self, id: i64) -> Result<Option<AdminQuestion>, StoreError>;
 }
 
+#[async_trait]
+pub trait PracticeStore: Send + Sync {
+    async fn get_practice_stats(&self, user_id: i64) -> Result<PracticeStats, StoreError>;
+    async fn record_practice_answer(
+        &self,
+        user_id: i64,
+        question_id: i64,
+        revision_id: i64,
+        answer: &AnswerPayload,
+        correct: bool,
+    ) -> Result<PracticeStats, StoreError>;
+}
+
 #[derive(Debug, Error)]
 pub enum PracticeError {
     #[error("question not found")]
@@ -118,16 +131,18 @@ pub struct CheckedAnswer {
     pub evaluation: Evaluation,
     pub explanation: Option<String>,
     pub correct_answer: CorrectAnswer,
+    pub practice_stats: PracticeStats,
 }
 
 #[derive(Clone)]
 pub struct PracticeService {
     questions: Arc<dyn QuestionStore>,
+    records: Arc<dyn PracticeStore>,
 }
 
 impl PracticeService {
-    pub fn new(questions: Arc<dyn QuestionStore>) -> Self {
-        Self { questions }
+    pub fn new(questions: Arc<dyn QuestionStore>, records: Arc<dyn PracticeStore>) -> Self {
+        Self { questions, records }
     }
 
     pub async fn list_question_banks(&self) -> Result<Vec<QuestionBank>, StoreError> {
@@ -145,8 +160,13 @@ impl PracticeService {
         self.questions.get_published(id).await
     }
 
+    pub async fn get_stats(&self, user_id: i64) -> Result<PracticeStats, PracticeError> {
+        Ok(self.records.get_practice_stats(user_id).await?)
+    }
+
     pub async fn check_answer(
         &self,
+        user_id: i64,
         id: i64,
         answer: &AnswerPayload,
     ) -> Result<CheckedAnswer, PracticeError> {
@@ -156,12 +176,26 @@ impl PracticeService {
             .await?
             .ok_or(PracticeError::NotFound)?;
         let evaluation = evaluate_answer(answer, &question.correct_answer)?;
+        let practice_stats = if question.public.question_type == QuestionType::ShortAnswer {
+            self.records.get_practice_stats(user_id).await?
+        } else {
+            self.records
+                .record_practice_answer(
+                    user_id,
+                    id,
+                    question.public.revision_id,
+                    answer,
+                    evaluation.correct == Some(true),
+                )
+                .await?
+        };
 
         Ok(CheckedAnswer {
             question_id: id,
             evaluation,
             explanation: question.explanation,
             correct_answer: question.correct_answer,
+            practice_stats,
         })
     }
 }

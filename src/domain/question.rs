@@ -156,6 +156,26 @@ pub struct Evaluation {
 }
 
 #[derive(Debug, Clone, PartialEq, Serialize, Deserialize)]
+pub struct PracticeStats {
+    pub answered_count: u32,
+    pub correct_count: u32,
+    pub accuracy_percent: Option<f64>,
+}
+
+impl PracticeStats {
+    pub fn from_counts(answered_count: u32, correct_count: u32) -> Self {
+        let accuracy_percent = (answered_count > 0).then(|| {
+            ((correct_count as f64 / answered_count as f64) * 100.0 * 100.0).round() / 100.0
+        });
+        Self {
+            answered_count,
+            correct_count,
+            accuracy_percent,
+        }
+    }
+}
+
+#[derive(Debug, Clone, PartialEq, Serialize, Deserialize)]
 pub struct QuestionOption {
     pub key: String,
     pub text: String,

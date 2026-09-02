@@ -14,14 +14,14 @@ use tokio::{net::TcpListener, sync::Mutex, task::JoinHandle};
 use xiaoluoquiz::{
     application::{
         AdminQuestionFilters, AuthStore, AuthStoreError, GradedAnswer, PaperQuestionSnapshot,
-        PaperStore, PaperStoreError, QuestionImportItem, QuestionImportItemStatus,
+        PaperStore, PaperStoreError, PracticeStore, QuestionImportItem, QuestionImportItemStatus,
         QuestionImportReport, StoredAttempt, StoredAttemptQuestion, StoredUser, hash_password,
     },
     domain::{
         AdminPaper, AdminQuestion, AdminQuestionInput, AnswerPayload, AttemptStatus, CandidateInfo,
         CorrectAnswer, GradingStatus, PaperQuestion, PaperRuntimeStatus, PaperStatus,
-        PublicQuestion, QuestionBank, QuestionBankInput, QuestionOption, QuestionStatus,
-        QuestionType, ScoringQuestion,
+        PracticeStats, PublicQuestion, QuestionBank, QuestionBankInput, QuestionOption,
+        QuestionStatus, QuestionType, ScoringQuestion,
         auth::{
             AccountStatus, ClassGroup, CreateClassInput, CreateUserInput, UserIdentity, UserRole,
         },
@@ -144,6 +144,7 @@ struct FakeQuestionStore {
     papers: Arc<Mutex<BTreeMap<i64, AdminPaper>>>,
     next_paper_id: AtomicI64,
     attempts: Arc<Mutex<BTreeMap<i64, FakeAttemptRecord>>>,
+    practice_records: Arc<Mutex<BTreeMap<(i64, i64), bool>>>,
     next_attempt_id: AtomicI64,
     users: Arc<Mutex<BTreeMap<i64, StoredUser>>>,
     classes: Arc<Mutex<BTreeMap<i64, ClassGroup>>>,
@@ -213,6 +214,7 @@ impl FakeQuestionStore {
             papers: Arc::new(Mutex::new(BTreeMap::new())),
             next_paper_id: AtomicI64::new(1),
             attempts: Arc::new(Mutex::new(BTreeMap::new())),
+            practice_records: Arc::new(Mutex::new(BTreeMap::new())),
             next_attempt_id: AtomicI64::new(1),
             users: Arc::new(Mutex::new(users)),
             classes: Arc::new(Mutex::new(BTreeMap::new())),
@@ -471,6 +473,38 @@ impl QuestionStore for FakeQuestionStore {
         };
         question.status = QuestionStatus::Archived;
         Ok(Some(question.clone()))
+    }
+}
+
+#[async_trait]
+impl PracticeStore for FakeQuestionStore {
+    async fn get_practice_stats(&self, user_id: i64) -> Result<PracticeStats, StoreError> {
+        let records = self.practice_records.lock().await;
+        let answered_count = records
+            .keys()
+            .filter(|(record_user_id, _)| *record_user_id == user_id)
+            .count() as u32;
+        let correct_count = records
+            .iter()
+            .filter(|((record_user_id, _), correct)| *record_user_id == user_id && **correct)
+            .count() as u32;
+        Ok(PracticeStats::from_counts(answered_count, correct_count))
+    }
+
+    async fn record_practice_answer(
+        &self,
+        user_id: i64,
+        question_id: i64,
+        _revision_id: i64,
+        _answer: &AnswerPayload,
+        correct: bool,
+    ) -> Result<PracticeStats, StoreError> {
+        self.practice_records
+            .lock()
+            .await
+            .entry((user_id, question_id))
+            .or_insert(correct);
+        self.get_practice_stats(user_id).await
     }
 }
 

@@ -58,8 +58,8 @@ sqlx migrate run --source "${MIGRATIONS_DIR}"
 actual_tables="$(docker exec "${CONTAINER_NAME}" psql \
     -U "${DB_USER}" \
     -d "${DB_NAME}" \
-    -Atqc "SELECT string_agg(tablename, ',' ORDER BY tablename) FROM pg_catalog.pg_tables WHERE schemaname = 'public' AND tablename IN ('_sqlx_migrations', 'attempt_answers', 'attempts', 'audit_logs', 'classes', 'paper_questions', 'papers', 'question_answers', 'question_banks', 'question_options', 'question_revisions', 'questions', 'user_sessions', 'users');")"
-expected_tables="_sqlx_migrations,attempt_answers,attempts,audit_logs,classes,paper_questions,papers,question_answers,question_banks,question_options,question_revisions,questions,user_sessions,users"
+    -Atqc "SELECT string_agg(tablename, ',' ORDER BY tablename) FROM pg_catalog.pg_tables WHERE schemaname = 'public' AND tablename IN ('_sqlx_migrations', 'attempt_answers', 'attempts', 'audit_logs', 'classes', 'paper_questions', 'papers', 'practice_records', 'question_answers', 'question_banks', 'question_options', 'question_revisions', 'questions', 'user_sessions', 'users');")"
+expected_tables="_sqlx_migrations,attempt_answers,attempts,audit_logs,classes,paper_questions,papers,practice_records,question_answers,question_banks,question_options,question_revisions,questions,user_sessions,users"
 if [[ "${actual_tables}" != "${expected_tables}" ]]; then
     printf 'error: unexpected public tables: %s\n' "${actual_tables}" >&2
     exit 1

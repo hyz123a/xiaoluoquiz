@@ -20,7 +20,7 @@ use tower_http::{
 use crate::application::{
     AdminQuestionFilters, AuthError, AuthService, AuthStore, AuthStoreError, ExamError,
     ExamService, PaperManagementError, PaperManagementService, PaperStore, PaperStoreError,
-    PracticeError, PracticeService, QuestionImportReport, QuestionManagementError,
+    PracticeError, PracticeService, PracticeStore, QuestionImportReport, QuestionManagementError,
     QuestionManagementService, QuestionStore, StoreError,
 };
 use crate::domain::auth::{
@@ -29,7 +29,8 @@ use crate::domain::auth::{
 use crate::domain::{
     AdminAttempt, AdminAttemptSummary, AdminPaper, AdminQuestion, AdminQuestionInput,
     AnswerPayload, CandidateInfo, CorrectAnswer, CreatePaperInput, EvaluationStatus, ExamAttempt,
-    ExamResult, PublishedPaper, QuestionBank, QuestionBankInput, QuestionImportBatch,
+    ExamResult, PracticeStats, PublishedPaper, QuestionBank, QuestionBankInput,
+    QuestionImportBatch,
 };
 
 #[derive(Clone)]
@@ -44,30 +45,39 @@ pub struct AppState {
 impl AppState {
     pub fn new<S>(store: Arc<S>) -> Self
     where
-        S: QuestionStore + AuthStore + PaperStore + 'static,
+        S: QuestionStore + AuthStore + PaperStore + PracticeStore + 'static,
     {
         Self::with_initial_password(store, "InitialPassword123!")
     }
 
     pub fn with_initial_password<S>(store: Arc<S>, initial_password: impl Into<Arc<str>>) -> Self
     where
-        S: QuestionStore + AuthStore + PaperStore + 'static,
+        S: QuestionStore + AuthStore + PaperStore + PracticeStore + 'static,
     {
         let questions: Arc<dyn QuestionStore> = store.clone();
         let auth_store: Arc<dyn AuthStore> = store.clone();
+        let practice_store: Arc<dyn PracticeStore> = store.clone();
         let paper_store: Arc<dyn PaperStore> = store;
-        Self::with_stores(questions, auth_store, paper_store, initial_password)
+        Self::with_stores(
+            questions,
+            auth_store,
+            practice_store,
+            paper_store,
+            initial_password,
+        )
     }
 
     pub fn with_stores(
         questions: Arc<dyn QuestionStore>,
         auth_store: Arc<dyn AuthStore>,
+        practice_store: Arc<dyn PracticeStore>,
         paper_store: Arc<dyn PaperStore>,
         initial_password: impl Into<Arc<str>>,
     ) -> Self {
         Self::with_stores_and_session_ttl(
             questions,
             auth_store,
+            practice_store,
             paper_store,
             initial_password,
             12 * 60 * 60,
@@ -77,6 +87,7 @@ impl AppState {
     pub fn with_stores_and_session_ttl(
         questions: Arc<dyn QuestionStore>,
         auth_store: Arc<dyn AuthStore>,
+        practice_store: Arc<dyn PracticeStore>,
         paper_store: Arc<dyn PaperStore>,
         initial_password: impl Into<Arc<str>>,
         session_ttl_seconds: i64,
@@ -86,7 +97,7 @@ impl AppState {
                 AuthService::new(auth_store, initial_password)
                     .with_session_ttl(session_ttl_seconds),
             ),
-            practice: Arc::new(PracticeService::new(questions.clone())),
+            practice: Arc::new(PracticeService::new(questions.clone(), practice_store)),
             management: Arc::new(QuestionManagementService::new(questions.clone())),
             papers: Arc::new(PaperManagementService::new(questions, paper_store.clone())),
             exams: Arc::new(ExamService::new(paper_store)),
@@ -103,6 +114,7 @@ pub fn api_router(state: AppState) -> Router {
         .route("/api/v1/auth/change-password", post(change_password))
         .route("/api/v1/auth/logout", post(logout))
         .route("/api/v1/question-banks", get(list_question_banks))
+        .route("/api/v1/practice/stats", get(get_practice_stats))
         .route("/api/v1/questions", get(list_questions))
         .route("/api/v1/questions/{id}", get(get_question))
         .route("/api/v1/questions/{id}/check", post(check_answer))
@@ -344,6 +356,14 @@ async fn list_question_banks(
     }))
 }
 
+async fn get_practice_stats(
+    State(state): State<AppState>,
+    headers: HeaderMap,
+) -> Result<Json<PracticeStats>, ApiError> {
+    let user = require_user(&state, &headers).await?;
+    Ok(Json(state.practice.get_stats(user.id).await?))
+}
+
 async fn list_questions(
     State(state): State<AppState>,
     headers: HeaderMap,
@@ -381,6 +401,7 @@ struct CheckAnswerResponse {
     correct: Option<bool>,
     explanation: Option<String>,
     correct_answer: CorrectAnswer,
+    practice_stats: PracticeStats,
 }
 
 async fn check_answer(
@@ -389,8 +410,11 @@ async fn check_answer(
     RoutePath(id): RoutePath<i64>,
     Json(request): Json<CheckAnswerRequest>,
 ) -> Result<Json<CheckAnswerResponse>, ApiError> {
-    let _user = require_user(&state, &headers).await?;
-    let checked = state.practice.check_answer(id, &request.answer).await?;
+    let user = require_user(&state, &headers).await?;
+    let checked = state
+        .practice
+        .check_answer(user.id, id, &request.answer)
+        .await?;
 
     Ok(Json(CheckAnswerResponse {
         question_id: checked.question_id,
@@ -398,6 +422,7 @@ async fn check_answer(
         correct: checked.evaluation.correct,
         explanation: checked.explanation,
         correct_answer: checked.correct_answer,
+        practice_stats: checked.practice_stats,
     }))
 }
 
