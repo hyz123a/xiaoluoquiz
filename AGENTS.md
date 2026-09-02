@@ -16,28 +16,38 @@ xiaoluoquiz 是一个面向约 200 名固定用户的 Rust 全栈刷题网站。
 - Node.js/TypeScript 只承担前端构建、样式处理和浏览器测试，不把核心业务迁移到另一套后端运行时。
 - 后续使用 Docker 部署。应用容器、PostgreSQL 和反向代理的职责要保持清晰；不要让应用容器依赖宿主机上的隐式状态。
 
-采用六边形架构（Hexagonal Architecture），模块边界如下：
+当前采用**轻量六边形架构的模块化单体**（Hexagonal Architecture）。六边形架构首先约束依赖方向和职责边界，不要求一次性把现有代码重写成完整的目录结构；只有当模块职责交叉或维护成本明显上升时，才进行渐进式拆分。
+
+当前模块映射如下：
 
 ```text
-src/domain/                 题目、答案、评分等纯领域模型和不变量
-src/application/            题库、练习等用例
-src/adapters/inbound/       Axum HTTP 路由、提取器和响应转换
-src/adapters/outbound/      SQLx 数据库、时钟等外部适配器
-src/configuration/          配置加载和环境变量覆盖
+src/domain/                 题目、答案、评分、试卷和认证等领域模型与不变量
+src/application/            用例、应用服务以及面向外部能力的端口（trait）
+src/server/http.rs          当前的 Axum HTTP 入站适配器
+src/server/*_store.rs       当前的 SQLx/PostgreSQL 出站适配器
+src/server/config.rs        当前的配置加载实现
 src/web/                    Yew/WASM 前端
 migrations/                 SQLx 数据库迁移
 scripts/                    本地 PostgreSQL 和开发辅助脚本
 tests/                      Rust 集成测试和 Playwright 端到端测试
 ```
 
+随着复杂度增加，可以将适配器和配置逐步迁移到以下目录；迁移时应保持外部行为不变，避免为了目录名称进行大规模重写：
+
+```text
+src/adapters/inbound/       Axum HTTP 路由、提取器和响应转换
+src/adapters/outbound/      SQLx 数据库、时钟等外部适配器
+src/configuration/          配置加载和环境变量覆盖
+```
+
 依赖方向保持为：
 
 ```text
-adapters -> application -> domain
-web      -> HTTP API/共享契约，不得直接访问数据库
+inbound/outbound adapters -> application -> domain
+web                       -> HTTP API/共享契约，不得直接访问数据库
 ```
 
-领域层不能依赖 Axum、SQLx、浏览器 API 或具体存储实现。路由层只负责 HTTP 适配和输入转换，用例层负责业务流程，数据库适配器负责持久化。
+新增业务逻辑应放在领域层或用例层，不应放入 HTTP 处理器或 SQL 查询中。应用层通过端口访问可替换的存储等外部能力；确需抽象密码哈希、时钟或随机数时再增加对应端口，不为尚未存在的替换需求预先建立大量抽象。领域层不能依赖 Axum、SQLx、浏览器 API 或具体存储实现。路由层只负责 HTTP 适配和输入转换，用例层负责业务流程，数据库适配器负责持久化和事务边界。
 
 ## 题目与答案
 
