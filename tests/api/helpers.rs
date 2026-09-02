@@ -1164,3 +1164,61 @@ impl AuthStore for FakeQuestionStore {
         Ok(())
     }
 }
+
+#[cfg(test)]
+mod static_route_tests {
+    use std::{
+        fs,
+        sync::Arc,
+        time::{SystemTime, UNIX_EPOCH},
+    };
+
+    use axum::{
+        body::Body,
+        http::{Request, StatusCode, header::CONTENT_TYPE},
+    };
+    use tower::ServiceExt;
+
+    #[tokio::test]
+    async fn spa_routes_serve_index_with_success_status() {
+        let suffix = SystemTime::now()
+            .duration_since(UNIX_EPOCH)
+            .expect("system clock should be after unix epoch")
+            .as_nanos();
+        let static_dir = std::env::temp_dir().join(format!(
+            "xiaoluoquiz-static-route-{}-{suffix}",
+            std::process::id()
+        ));
+        fs::create_dir_all(&static_dir).expect("temporary static directory should be created");
+        fs::write(
+            static_dir.join("index.html"),
+            "<!doctype html><html><body>test app</body></html>",
+        )
+        .expect("temporary index should be written");
+
+        let app = xiaoluoquiz::server::application_router(
+            xiaoluoquiz::server::AppState::new(Arc::new(super::FakeQuestionStore::new())),
+            &static_dir,
+        );
+        let response = app
+            .oneshot(
+                Request::builder()
+                    .uri("/admin/users")
+                    .body(Body::empty())
+                    .expect("request should be built"),
+            )
+            .await
+            .expect("router should return a response");
+
+        assert_eq!(response.status(), StatusCode::OK);
+        assert_eq!(
+            response
+                .headers()
+                .get(CONTENT_TYPE)
+                .and_then(|value| value.to_str().ok()),
+            Some("text/html")
+        );
+
+        fs::remove_dir_all(static_dir).expect("temporary static directory should be removed");
+    }
+}

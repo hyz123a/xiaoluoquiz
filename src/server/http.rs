@@ -191,7 +191,7 @@ pub fn application_router(state: AppState, static_dir: impl AsRef<Path>) -> Rout
     api_router(state).fallback_service(
         ServeDir::new(static_dir)
             .append_index_html_on_directories(true)
-            .not_found_service(ServeFile::new(index)),
+            .fallback(ServeFile::new(index)),
     )
 }
 
