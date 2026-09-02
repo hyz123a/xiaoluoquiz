@@ -92,7 +92,7 @@ chmod 600 .env
 
 ```dotenv
 XIAOLUOQUIZ_IMAGE=crpi-628m2chfifsf3crp.cn-hangzhou.personal.cr.aliyuncs.com/xiaoluoquiz/xiaoluoquiz:20260902-1
-INITIAL_PASSWORD=一段新的随机初始密码
+INITIAL_PASSWORD=在 ECS 的 .env 中填入此前约定的固定初始密码
 DOMAIN=quiz.example.com
 ```
 
