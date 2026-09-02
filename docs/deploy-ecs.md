@@ -27,16 +27,42 @@ aliyun ecs DescribeInstances \
 
 ## 2. 准备镜像
 
-在本地或 CI 构建镜像，并推送到阿里云容器镜像服务 ACR。镜像必须使用具体版本标签，不要在生产部署中依赖 `latest`：
+本仓库已经配置 GitHub Actions 工作流 `.github/workflows/publish-image.yml`，使用以下阿里云容器镜像服务 ACR 路径：
+
+```text
+crpi-628m2chfifsf3crp.cn-hangzhou.personal.cr.aliyuncs.com/xiaoluoquiz/xiaoluoquiz
+```
+
+工作流在 `master` 分支推送和形如 `v1.2.3` 的版本标签推送时构建并推送镜像，也支持手动触发时附加自定义标签。每次都会生成基于提交的 `sha-<短提交 SHA>` 标签，不生成或依赖 `latest`。
+
+在 GitHub 仓库的 **Settings → Secrets and variables → Actions** 中配置：
+
+- `ACR_USERNAME`：`llz00z`。
+- `ACR_PASSWORD`：ACR 个人版仓库密码或访问凭证。只在 GitHub Secret 中设置，不写入仓库或聊天记录。
+
+也可以在本地使用 GitHub CLI 设置这两个 Secret；第二条命令会从标准输入读取凭证：
+
+```bash
+gh secret set ACR_USERNAME --repo hyz123a/xiaoluoquiz --body llz00z
+gh secret set ACR_PASSWORD --repo hyz123a/xiaoluoquiz
+```
+
+手动构建时使用同一镜像路径和具体标签：
 
 ```bash
 docker build \
-  --tag registry.cn-hangzhou.aliyuncs.com/your-namespace/xiaoluoquiz:20260902-1 \
+  --tag crpi-628m2chfifsf3crp.cn-hangzhou.personal.cr.aliyuncs.com/xiaoluoquiz/xiaoluoquiz:release-20260902 \
   .
-docker push registry.cn-hangzhou.aliyuncs.com/your-namespace/xiaoluoquiz:20260902-1
+docker push crpi-628m2chfifsf3crp.cn-hangzhou.personal.cr.aliyuncs.com/xiaoluoquiz/xiaoluoquiz:release-20260902
 ```
 
-在 ECS 上登录 ACR 后，部署脚本会拉取 `XIAOLUOQUIZ_IMAGE` 指定的版本。
+在 ECS 上首次拉取 ACR 镜像前，登录对应 Registry。命令会隐藏式提示输入密码，不要把密码写进命令行参数：
+
+```bash
+docker login crpi-628m2chfifsf3crp.cn-hangzhou.personal.cr.aliyuncs.com --username llz00z
+```
+
+登录成功后，部署脚本会拉取 `.env` 中 `XIAOLUOQUIZ_IMAGE` 指定的版本。GitHub Actions 使用 Secret 向工作流提供凭证，Secret 内容不会写入工作流文件。
 
 ## 3. 准备部署目录
 
@@ -65,7 +91,7 @@ chmod 600 .env
 `.env` 不能提交到 Git。至少需要修改：
 
 ```dotenv
-XIAOLUOQUIZ_IMAGE=registry.cn-hangzhou.aliyuncs.com/your-namespace/xiaoluoquiz:20260902-1
+XIAOLUOQUIZ_IMAGE=crpi-628m2chfifsf3crp.cn-hangzhou.personal.cr.aliyuncs.com/xiaoluoquiz/xiaoluoquiz:20260902-1
 INITIAL_PASSWORD=一段新的随机初始密码
 DOMAIN=quiz.example.com
 ```
@@ -140,7 +166,7 @@ BUILD_IMAGE=1 ./scripts/deploy_ecs.sh
 更新时只需要修改 `.env` 中的镜像标签，然后重新执行部署脚本：
 
 ```dotenv
-XIAOLUOQUIZ_IMAGE=registry.cn-hangzhou.aliyuncs.com/your-namespace/xiaoluoquiz:20260902-2
+XIAOLUOQUIZ_IMAGE=crpi-628m2chfifsf3crp.cn-hangzhou.personal.cr.aliyuncs.com/xiaoluoquiz/xiaoluoquiz:20260902-2
 ```
 
 ```bash

@@ -1,0 +1,84 @@
+name: Publish application image
+
+on:
+  push:
+    branches:
+      - master
+    tags:
+      - 'v*.*.*'
+  workflow_dispatch:
+    inputs:
+      image_tag:
+        description: Optional additional image tag (for example, release-20260902)
+        required: false
+        type: string
+
+permissions:
+  contents: read
+
+env:
+  ACR_REGISTRY: crpi-628m2chfifsf3crp.cn-hangzhou.personal.cr.aliyuncs.com
+  IMAGE_NAME: xiaoluoquiz/xiaoluoquiz
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v6
+
+      - name: Validate publish inputs
+        env:
+          ACR_USERNAME: ${{ secrets.ACR_USERNAME }}
+          ACR_PASSWORD: ${{ secrets.ACR_PASSWORD }}
+          MANUAL_IMAGE_TAG: ${{ inputs.image_tag }}
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          if [[ -z "${ACR_USERNAME}" ]]; then
+            printf '%s\n' 'ACR_USERNAME repository secret is not configured.' >&2
+            exit 1
+          fi
+          if [[ -z "${ACR_PASSWORD}" ]]; then
+            printf '%s\n' 'ACR_PASSWORD repository secret is not configured.' >&2
+            exit 1
+          fi
+          if [[ -n "${MANUAL_IMAGE_TAG}" && ! "${MANUAL_IMAGE_TAG}" =~ ^[A-Za-z0-9][A-Za-z0-9_.-]{0,127}$ ]]; then
+            printf '%s\n' 'image_tag must contain only letters, numbers, dots, underscores, or hyphens.' >&2
+            exit 1
+          fi
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v4
+
+      - name: Log in to ACR
+        uses: docker/login-action@v4
+        with:
+          registry: ${{ env.ACR_REGISTRY }}
+          username: ${{ secrets.ACR_USERNAME }}
+          password: ${{ secrets.ACR_PASSWORD }}
+
+      - name: Generate image metadata
+        id: meta
+        uses: docker/metadata-action@v6
+        with:
+          images: ${{ env.ACR_REGISTRY }}/${{ env.IMAGE_NAME }}
+          flavor: |
+            latest=false
+          tags: |
+            type=sha,prefix=sha-
+            type=ref,event=tag
+            type=raw,value=${{ inputs.image_tag }},enable=${{ github.event_name == 'workflow_dispatch' && inputs.image_tag != '' }}
+
+      - name: Build and push image
+        uses: docker/build-push-action@v7
+        with:
+          context: .
+          file: ./Dockerfile
+          target: runtime
+          platforms: linux/amd64
+          push: true
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+          cache-from: type=gha,scope=xiaoluoquiz
+          cache-to: type=gha,mode=max,scope=xiaoluoquiz
